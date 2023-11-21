@@ -1,15 +1,58 @@
+// Import Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+// Import Font Inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+// Variables
+$primary-color: #61422e;
+$background-color: white;
+
+// Body Styles
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+// Custom Navbar Styles
 .custom-navbar {
-  background-color: white;
+  background-color: $background-color;
 }
 
+// Custom Logo Image Styles
 .custom-logo-img {
-    width: 100px;
+  width: 100px;
 }
 
+// Text Active Styles
 .text-active {
-    color: #61422e;
-    font-weight: bold; 
-    font-size: 16px;
+  color: $primary-color;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+// Background Custom Styles
+.background-custom {
+  background-color: $primary-color;
+}
+
+// Dropdown Styles
+.dropdown-toggle {
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.dropdown-menu {
+  a.dropdown-item {
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.text-white.background-custom {
+    &:hover {
+      color: white;
+      background-color: #61422e;
+    }
 }
