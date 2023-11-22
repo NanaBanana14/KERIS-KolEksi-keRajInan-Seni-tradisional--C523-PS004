@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+ 
+    <main>
+        <div class="container py-5">
+            <h1 class="mb-3">News</h1>
+            <div class="row">
+              <div class="col-md-8">
+                <!-- Konten utama di sini -->
+                <p>Main Content Goes Here</p>
+              </div>
+              <div class="col-md-4">
+                <custom-carousel></custom-carousel>
+              </div>
+            </div>
+        </div>          
+    </main>
+ 
+    <footer>
+      <div class="main-footer bg-dark">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

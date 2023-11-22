@@ -8,6 +8,7 @@ class NavApp extends LitWithoutShadowDom {
 
   constructor() {
     super();
+    // eslint-disable-next-line no-underscore-dangle
     this._checkAvailabilityProperty()
   }
 

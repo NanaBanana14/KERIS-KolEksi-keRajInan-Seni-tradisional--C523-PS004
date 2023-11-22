@@ -56,6 +56,13 @@ module.exports = {
       ...htmlWebpackPluginConfig,
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'News',
+      filename: 'menu/news.html',
+      template: path.resolve(__dirname, 'src/views/menu/news.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
     new CleanWebpackPlugin(),
 
     new CopyWebpackPlugin({

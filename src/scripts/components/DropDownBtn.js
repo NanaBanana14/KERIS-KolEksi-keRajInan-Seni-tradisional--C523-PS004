@@ -10,9 +10,9 @@ class DropdownBtn extends LitWithoutShadowDom {
                 Menu
             </a>
             <div class="dropdown-menu" aria-labelledby="Menu">
-                <a class="dropdown-item" href="/transactions/add.html">Tambah Sory</a>
-                <a class="dropdown-item" href="/menu/about-company.html">Tentang Perusahaan</a>
-                <a class="dropdown-item" href="#" target="_blank">Developer</a>
+                <a class="dropdown-item" href="#">Galeri Seni</a>
+                <a class="dropdown-item" href="/menu/news.html">News</a>
+                <a class="dropdown-item" href="#">Kalendar Budaya</a>
             </div>
         </li>
         `;
