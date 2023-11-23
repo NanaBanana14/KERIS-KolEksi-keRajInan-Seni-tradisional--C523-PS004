@@ -9,7 +9,7 @@ class NavApp extends LitWithoutShadowDom {
   constructor() {
     super();
     // eslint-disable-next-line no-underscore-dangle
-    this._checkAvailabilityProperty()
+    this._checkAvailabilityProperty();
   }
 
   // eslint-disable-next-line no-underscore-dangle
@@ -19,6 +19,7 @@ class NavApp extends LitWithoutShadowDom {
     }
   }
 
+  // eslint-disable-next-line class-methods-use-this
   render() {
     return html`
       <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
@@ -40,5 +41,5 @@ class NavApp extends LitWithoutShadowDom {
     `;
   }
 }
- 
+
 customElements.define('nav-app', NavApp);
