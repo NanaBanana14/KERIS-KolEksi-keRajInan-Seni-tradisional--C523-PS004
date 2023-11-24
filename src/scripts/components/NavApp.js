@@ -26,7 +26,7 @@ class NavApp extends LitWithoutShadowDom {
         <div class="container d-flex align-items-center">
           <img class="custom-logo-img" src="https://firebasestorage.googleapis.com/v0/b/restapi-keris.appspot.com/o/logo%2Flogo-keris.png?alt=media&token=67fdcc3e-f297-4fc6-b5f4-5d80cdde4338" alt="">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom-toggler-color"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
