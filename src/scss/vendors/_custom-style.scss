@@ -23,6 +23,16 @@ body {
   width: 150px;
 }
 
+.flower-icon-img {
+  width: 150px;
+}
+
+.custom-toggler-color {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
 // Text Active Styles
 .text-active {
   color: $primary-color;
@@ -50,9 +60,66 @@ body {
   }
 }
 
+
+
 .text-white.background-custom {
-    &:hover {
-      color: white;
-      background-color: #61422e;
-    }
+  &:hover {
+    color: white;
+     background-color: #61422e;
+  }
+}
+
+.calendar {
+  border: solid 1px #777;
+  border-radius: 10px;
+  width: 800px;
+  height: 600px;
+  frameborder: 0;
+  scrolling: no;
+}
+
+.background-batik-custom {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fassets%20kalendar%2Fmotif%20batik%20ver2.jpg?alt=media&token=0178ec95-5d3f-4047-887f-7ffa05b08092);
+  height: 100px;
+  background-color: rgba(97, 66, 46, 0.5);
+}
+
+.display-custom {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media Query for Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 0;
+  }
+
+  .shadow {
+    margin: 0;
+  }
+
+  .calendar {
+    width: 400px;
+  }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+
+  .shadow {
+    margin: 0;
+  }
+
+  .calendar {
+    width: 100%;
+  }
+
+  .display-custom {
+    flex-direction: column;
+  }
+
 }
