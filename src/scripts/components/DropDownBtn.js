@@ -12,7 +12,7 @@ class DropdownBtn extends LitWithoutShadowDom {
             <div class="dropdown-menu" aria-labelledby="Menu">
                 <a class="dropdown-item" href="#">Galeri Seni</a>
                 <a class="dropdown-item" href="/menu/news.html">News</a>
-                <a class="dropdown-item" href="#">Kalendar Budaya</a>
+                <a class="dropdown-item" href="/menu/kalendarbudaya.html">Kalendar Budaya</a>
             </div>
         </li>
         `;
