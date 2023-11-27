@@ -56,10 +56,19 @@ module.exports = {
       ...htmlWebpackPluginConfig,
     }),
 
+    // Menu
+
     new HtmlWebpackPlugin({
       title: 'News',
       filename: 'menu/news.html',
       template: path.resolve(__dirname, 'src/views/menu/news.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Kalendar Budaya',
+      filename: 'menu/kalendarbudaya.html',
+      template: path.resolve(__dirname, 'src/views/menu/kalendarbudaya.html'),
       ...htmlWebpackPluginConfig,
     }),
 
