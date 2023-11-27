@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main class="mt-5">
+      <!-- Bagian Judul -->
+      <div class="bg-warning py-5 mb-3">
+        <div class="container d-flex align-items-center flex-wrap" style="gap: 30px">
+          <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Farts-image%2Fart-gamelan.jpg?alt=media&token=ccb5c2fa-6b8d-4347-98a3-01523e19a2af" alt="gamelan" style="width: 400px" />
+          <h2>Gamelan</h2>
+        </div>
+      </div>
+
+      <!-- Bagian Ringkasan -->
+      <div class="container mb-5">
+        <h3>Ringkasan</h3>
+        <hr />
+        <div class="container p-0">
+          <div class="row mb-3">
+            <div class="col font-weight-bold">Deskripsi</div>
+            <div class="col-10">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quisquam quo necessitatibus voluptatibus saepe quis esse repellat ipsum quod aliquid. Cumque assumenda modi sit facilis ducimus exercitationem libero repudiandae
+              qui!
+            </div>
+          </div>
+          <div class="row">
+            <div class="col font-weight-bold">Seller</div>
+            <div class="col-10">
+              <ul style="list-style: none; padding: 0">
+                <li>- <a href="">aaaa</a></li>
+                <li>- <a href="">aaaa</a></li>
+                <li>- <a href="">aaaa</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Ulasan -->
+      <div class="container col-md-8 mb-5">
+        <h3>Ulasan</h3>
+        <hr />
+        <div style="max-height: 300px; overflow: auto">
+          <div class="mb-3">
+            <p class="m-0">
+              <span class="font-weight-bold">Papa Zola</span>
+              <span class="text-black-50"> - 27 November 2023</span>
+            </p>
+            <p class="m-0">hahihu huwa huwa</p>
+          </div>
+          <div class="mb-3">
+            <p class="m-0">
+              <span class="font-weight-bold">Papa Zola</span>
+              <span class="text-black-50"> - 27 November 2023</span>
+            </p>
+            <p class="m-0">hahihu huwa huwa</p>
+          </div>
+          <div class="mb-3">
+            <p class="m-0">
+              <span class="font-weight-bold">Papa Zola</span>
+              <span class="text-black-50"> - 27 November 2023</span>
+            </p>
+            <p class="m-0">hahihu huwa huwa</p>
+          </div>
+          <div class="mb-3">
+            <p class="m-0">
+              <span class="font-weight-bold">Papa Zola</span>
+              <span class="text-black-50"> - 27 November 2023</span>
+            </p>
+            <p class="m-0">hahihu huwa huwa</p>
+          </div>
+          <div class="mb-3">
+            <p class="m-0">
+              <span class="font-weight-bold">Papa Zola</span>
+              <span class="text-black-50"> - 27 November 2023</span>
+            </p>
+            <p class="m-0">hahihu huwa huwa</p>
+          </div>
+          <div class="mb-3">
+            <p class="m-0">
+              <span class="font-weight-bold">Papa Zola</span>
+              <span class="text-black-50"> - 27 November 2023</span>
+            </p>
+            <p class="m-0">hahihu huwa huwa</p>
+          </div>
+        </div>
+        <hr class="mb-3" />
+
+        <h3>Tulis Ulasan</h3>
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" />
+        </div>
+        <div class="form-group">
+          <label for="ulasan">Ulasan:</label>
+          <textarea class="form-control" id="ulasan" rows="3" placeholder="Tulis ulasan Anda"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Ulasan</button>
+      </div>
+    </main>
+
+    <footer class="">
+      <div class="main-footer background-custom">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
