@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav-app brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main style="margin-top: 70px">
+      <!-- Corousal -->
+      <div class="background-custom py-5 p-5 mt-5">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <h1 class="text-white text-center">Temukan Event dan Berita Seputar Seni Disini</h1>
+          </div>
+          <div class="col-md-6">
+            <custom-carousel-galeri></custom-carousel-galeri>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Navigasi -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <!-- Bagian Kiri Arts Navigasi -->
+          <div class="navbar-nav">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Semua</a></li>
+                <li><a class="dropdown-item" href="#">Alat Musik</a></li>
+                <li><a class="dropdown-item" href="#">Sastra</a></li>
+                <li><a class="dropdown-item" href="#">Seni Rupa</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Bagian Kanan Art Navigasi -->
+          <div class="navbar-nav ml-auto">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Item Arts -->
+      <div class="d-flex flex-wrap justify-content-center p-4 gap-4">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Farts-image%2Fart-tifa.jpg?alt=media&token=6ea835d9-f9cc-44da-930e-7ca39623e717"
+            class="card-img-top"
+            alt="..."
+            style="height: 200px; object-fit: cover"
+          />
+          <div class="card-body d-flex flex-column" style="height: 200px">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text flex-grow-1" style="overflow: hidden">
+              Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod odio quaerat. Quae voluptatibus non unde inventore explicabo
+              excepturi minima accusamus nobis magni commodi, illo aspernatur quam quidem totam autem.
+            </p>
+            <a href="./detail-galeri-seni.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Farts-image%2Fart-menyerah-bukan-pilihan.jpg?alt=media&token=ac0fad0a-e8fe-4d84-8763-e9c027d21bef"
+            class="card-img-top"
+            alt="..."
+            style="height: 200px; object-fit: cover"
+          />
+          <div class="card-body d-flex flex-column" style="height: 200px">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text flex-grow-1" style="overflow: hidden">
+              Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod odio quaerat. Quae voluptatibus non unde inventore explicabo
+              excepturi minima accusamus nobis magni commodi, illo aspernatur quam quidem totam autem.
+            </p>
+            <a href="#" class="btn btn-primary bg">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="">
+      <div class="main-footer background-custom">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
