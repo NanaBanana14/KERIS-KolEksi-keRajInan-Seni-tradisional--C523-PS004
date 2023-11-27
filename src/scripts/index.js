@@ -6,6 +6,7 @@ import './components/index';
 
 // Import javascript file as needed
 
+import './utils/firebase';
 /* eslint-disable */
 import * as bootstrap from 'bootstrap';
 
