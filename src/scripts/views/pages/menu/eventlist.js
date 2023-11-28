@@ -4,18 +4,18 @@ import { createEventTemplate } from '../../templates/template-creator';
 const EventList = {
   async render() {
     return `
-      <div id="loading-indicator-events" class="loading-indicator">
-        <p class="loading">Loading events...</p>
+      <div id="loading-indicator-event" class="loading-indicator">
+        <p class="loading">Loading...</p>
       </div>
-      <div class="list-events" id="event-list">
+      <div class="card-columns" id="event-list-container">
         <!-- List of events will be displayed here -->
       </div>
     `;
   },
 
   async afterRender() {
-    const eventListContainer = document.querySelector('#event-list');
-    const loadingIndicator = document.getElementById('loading-indicator-events');
+    const eventContainer = document.querySelector('#event-list-container');
+    const loadingIndicator = document.getElementById('loading-indicator-event');
 
     if (loadingIndicator) {
       loadingIndicator.style.display = 'block';
@@ -29,19 +29,19 @@ const EventList = {
       }
 
       if (events.length === 0) {
-        eventListContainer.innerHTML = '<p>No events found.</p>';
+        eventContainer.innerHTML = '<p>No events found.</p>';
       } else {
-        eventListContainer.innerHTML = '';
+        eventContainer.innerHTML = '';
         events.forEach((event) => {
-          const eventItem = createEventTemplate(event);
-          eventListContainer.innerHTML += eventItem;
+          const eventItemTemplate = createEventTemplate(event);
+          eventContainer.innerHTML += eventItemTemplate;
         });
       }
     } catch (error) {
       if (loadingIndicator) {
         loadingIndicator.style.display = 'none';
       }
-      eventListContainer.innerHTML = '<p class="message">Error fetching event list.</p>';
+      eventContainer.innerHTML = '<p class="message">Error fetching event list.</p>';
     }
   },
 };

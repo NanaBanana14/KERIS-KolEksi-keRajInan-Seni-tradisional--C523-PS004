@@ -5,6 +5,8 @@ import '../scss/main.scss';
 import './components/index';
 
 // Import javascript file as needed
+import EventList from './views/pages/menu/eventlist';
+import NewsList from './views/pages/menu/newslist';
 
 import './utils/firebase';
 /* eslint-disable */
@@ -31,4 +33,19 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   const route = detectRoute();
   route.init();
+});
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const eventListContainer = document.getElementById('event-list-container');
+  const newsListContainer = document.getElementById('news-list-container');
+
+  // Render and display EventList
+  const eventListHtml = await EventList.render();
+  eventListContainer.innerHTML = eventListHtml;
+  await EventList.afterRender();
+
+  // Render and display NewsList
+  const newsListHtml = await NewsList.render();
+  newsListContainer.innerHTML = newsListHtml;
+  await NewsList.afterRender();
 });
