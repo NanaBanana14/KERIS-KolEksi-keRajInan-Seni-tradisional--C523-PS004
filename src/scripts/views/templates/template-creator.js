@@ -1,5 +1,5 @@
 const createEventTemplate = (event) => `
-  <div class="card mb-3 col-md-4 mx-3">
+  <div class="card mb-3 col-md-4">
     <img src="${event['image-url']}" class="card-img-top" alt="${event.name}">
     <div class="card-body">
       <h5 class="card-title">${event.name}</h5>
@@ -9,7 +9,7 @@ const createEventTemplate = (event) => `
 `;
 
 const createNewsTemplate = (news) => `
-  <div class="card mb-3 col-md-4 mx-3">
+  <div class="card mb-3 col-md-4">
     <img src="${news['image-url']}" class="card-img-top" alt="${news.title}">
     <div class="card-body">
       <h5 class="card-title">${news.title}</h5>
