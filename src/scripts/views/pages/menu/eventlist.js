@@ -9,8 +9,6 @@ async function eventlist() {
     const events = Object.values(eventsResponse);
 
     const eventListContainer = document.getElementById('event-list-container');
-
-    // Periksa apakah events adalah sebuah array sebelum mencoba melakukan iterasi
     if (Array.isArray(events)) {
       events.forEach((event) => {
         const eventCard = createEventTemplate(event);
