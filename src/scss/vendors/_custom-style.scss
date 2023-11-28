@@ -1,5 +1,5 @@
 // Import Bootstrap
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
 
 // Import Font Inter
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
@@ -47,25 +47,15 @@ body {
 
 // Dropdown Styles
 .dropdown-toggle {
-  &:hover {
-    background-color: $primary-color;
-  }
+  background-color: $primary-color;
 }
 
-.dropdown-menu {
-  a.dropdown-item {
-    &:hover {
-      background-color: $primary-color;
-    }
-  }
-}
-
-
+//
 
 .text-white.background-custom {
   &:hover {
     color: white;
-     background-color: #61422e;
+    background-color: #61422e;
   }
 }
 
@@ -112,7 +102,6 @@ body {
   .calendar {
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 992px) and (max-width: 1370px) {
@@ -127,5 +116,45 @@ body {
   .calendar {
     width: 600px;
   }
+}
 
+/* Login Register */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ececec;
+}
+
+.box-area {
+    width: 930px;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
 }
