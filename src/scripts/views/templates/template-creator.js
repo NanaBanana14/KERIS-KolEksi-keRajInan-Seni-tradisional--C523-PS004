@@ -19,10 +19,41 @@ const createNewsTemplate = (news) => `
   </div>
 `;
 
+const createDetailEventTemplate = (event) => `
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="${event['image-url']}" class="img-fluid" alt="${event.name}">
+      </div>
+      <div class="col-md-6">
+        <h2>${event.name}</h2>
+        <p>${event.description}</p>
+        <p><strong>Date:</strong> ${event.date}</p>
+        <p><strong>Location:</strong> ${event.location}</p>
+      </div>
+    </div>
+  </div>
+`;
+
+const createDetailNewsTemplate = (news) => `
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="${news['image-url']}" class="img-fluid" alt="${news.title}">
+      </div>
+      <div class="col-md-6">
+        <h2>${news.title}</h2>
+        <p>${news.description}</p>
+        <p><strong>Publish Date:</strong> ${news['publish-date']}</p>
+        <p><strong>Source:</strong> <a href="${news.source}" target="_blank">${news.source}</a></p>
+      </div>
+    </div>
+  </div>
+`;
+
 export {
   createEventTemplate,
   createNewsTemplate,
+  createDetailEventTemplate,
+  createDetailNewsTemplate,
 };
-
-{/* <p class="card-text">${event.description}</p>
-<p class="card-text">${news.description}</p> */}
