@@ -1,18 +1,9 @@
 import { html } from 'lit';
 import LitWithoutShadowDom from './base/LitWithoutShadowDom';
 
-class CustomCarousel extends LitWithoutShadowDom {
+class CustomCarouselGaleri extends LitWithoutShadowDom {
   connectedCallback() {
     super.connectedCallback();
-    this.initCarousel();
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  initCarousel() {
-    // Inisialisasi Bootstrap Carousel
-    // const carousel = new bootstrap.Carousel(this.shadowRoot.querySelector('.carousel'), {
-    //   interval: 2000,
-    // });
   }
 
   // eslint-disable-next-line class-methods-use-this
@@ -26,13 +17,13 @@ class CustomCarousel extends LitWithoutShadowDom {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-event-1.jpg?alt=media&token=f16a9587-385d-4452-9351-ceb62a3f3d4d" class="d-block w-100" alt="..." />
+            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-art-1.jpg?alt=media&token=1136c0f2-3aa7-4a9d-bb1e-9536b232bceb" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-event-2.jpg?alt=media&token=5b2884be-18f6-4982-87d0-a56a4f0cc4d0" class="d-block w-100" alt="..." />
+            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-art-2.jpg?alt=media&token=53757291-41c3-4cb7-8b30-7601c79f0d17" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-news-1.jpg?alt=media&token=4c86a62d-1c18-484c-bf23-6050af61274b" class="d-block w-100" alt="..." />
+            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-art-3.jpg?alt=media&token=4b5d128b-db2d-4156-a432-81de7cba947b" class="d-block w-100" alt="..." />
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -48,4 +39,4 @@ class CustomCarousel extends LitWithoutShadowDom {
   }
 }
 
-customElements.define('custom-carousel', CustomCarousel);
+customElements.define('custom-carousel-galeri', CustomCarouselGaleri);

@@ -59,6 +59,20 @@ module.exports = {
     // Menu
 
     new HtmlWebpackPlugin({
+      title: 'Galeri Seni',
+      filename: 'menu/galeri-seni.html',
+      template: path.resolve(__dirname, 'src/views/menu/galeri-seni.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Detail Galeri Seni',
+      filename: 'menu/detail-galeri-seni.html',
+      template: path.resolve(__dirname, 'src/views/menu/detail-galeri-seni.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
+    new HtmlWebpackPlugin({
       title: 'News',
       filename: 'menu/news.html',
       template: path.resolve(__dirname, 'src/views/menu/news.html'),
@@ -69,6 +83,22 @@ module.exports = {
       title: 'Kalendar Budaya',
       filename: 'menu/kalendarbudaya.html',
       template: path.resolve(__dirname, 'src/views/menu/kalendarbudaya.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
+    // autentication
+
+    new HtmlWebpackPlugin({
+      title: 'Login',
+      filename: 'auth/login.html',
+      template: path.resolve(__dirname, 'src/views/auth/login.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Register',
+      filename: 'auth/register.html',
+      template: path.resolve(__dirname, 'src/views/auth/register.html'),
       ...htmlWebpackPluginConfig,
     }),
 
