@@ -1,49 +1,26 @@
 import Arts from '../../../network/arts';
 import { createNewsTemplate } from '../../templates/template-creator';
 
-const NewsList = {
-  async render() {
-    return `
-      <div id="loading-indicator-news" class="loading-indicator">
-        <p class="loading">Loading...</p>
-      </div>
-      <div class="card-columns" id="news-list-container">
-        <!-- List of news will be displayed here -->
-      </div>
-    `;
-  },
+async function newslist() {
+  try {
+    const newsResponse = await Arts.getAllNews();
 
-  async afterRender() {
-    const newsContainer = document.querySelector('#news-list-container');
-    const loadingIndicator = document.getElementById('loading-indicator-news');
+    // Mengambil nilai dari objek respons
+    const news = Object.values(newsResponse);
 
-    if (loadingIndicator) {
-      loadingIndicator.style.display = 'block';
+    const newsListContainer = document.getElementById('news-list-container');
+
+    if (Array.isArray(news)) {
+      news.forEach((newsItem) => {
+        const newsCard = createNewsTemplate(newsItem);
+        newsListContainer.innerHTML += newsCard;
+      });
+    } else {
+      console.error('Error: Respons dari Arts.getAllNews() bukanlah sebuah array.');
     }
+  } catch (error) {
+    console.error('Error fetching and displaying news:', error);
+  }
+}
 
-    try {
-      const news = await Arts.getAllNews();
-
-      if (loadingIndicator) {
-        loadingIndicator.style.display = 'none';
-      }
-
-      if (news.length === 0) {
-        newsContainer.innerHTML = '<p>No news found.</p>';
-      } else {
-        newsContainer.innerHTML = '';
-        news.forEach((newsItem) => {
-          const newsItemTemplate = createNewsTemplate(newsItem);
-          newsContainer.innerHTML += newsItemTemplate;
-        });
-      }
-    } catch (error) {
-      if (loadingIndicator) {
-        loadingIndicator.style.display = 'none';
-      }
-      newsContainer.innerHTML = '<p class="message">Error fetching news list.</p>';
-    }
-  },
-};
-
-export default NewsList;
+export default newslist;
