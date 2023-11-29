@@ -4,15 +4,47 @@
 // Import Font Inter
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
 
+// ==============================
 // Variables
+// ==============================
+
 $primary-color: #61422e;
 
-// Body Styles
+// ==============================
+// Custom HTML Element Styles
+// ==============================
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
-// Custom Logo Image Styles
+// ==============================
+// Custom New Class Styles
+// ==============================
+
+/* Custom Background Color */
+.bg-brown {
+  background-color: $primary-color;
+}
+
+/* Custom Button Color */
+.btn-white-brown {
+  outline: 1px solid $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+.btn-brown-darkbrown {
+  background-color: $primary-color;
+  color: white;
+  &:hover {
+    background-color: #4a3323;
+    color: white;
+  }
+}
+
+/* Custom Logo Image Styles */
 .custom-logo-img {
   height: 40px;
 }
@@ -26,14 +58,12 @@ body {
   border-color: $primary-color;
 }
 
-// Text Active Styles
+/* Text Active Styles */
 .text-active {
   color: $primary-color;
   font-weight: bold;
   font-size: 16px;
 }
-
-//
 
 .text-white.background-custom {
   &:hover {
@@ -57,61 +87,6 @@ body {
   background-color: rgba(97, 66, 46, 0.5);
 }
 
-/* Media Query for Tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    margin: 0;
-  }
-
-  .shadow {
-    margin: 0;
-  }
-
-  .calendar {
-    width: 400px;
-  }
-}
-
-/* Media Query for Mobile */
-@media screen and (max-width: 767px) {
-  body {
-    margin: 0;
-  }
-
-  .shadow {
-    margin: 0;
-  }
-
-  .calendar {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1370px) {
-  body {
-    margin: 0;
-  }
-
-  .shadow {
-    margin: 0;
-  }
-
-  .calendar {
-    width: 600px;
-  }
-}
-
-
-//Hijria
-section.hero {
-  padding: 80px 0;
-}
-
-.btn.btn-primary {
-  background-color: #61422e; 
-}
-
-
 /* Login Register */
 
 .box-area {
@@ -134,6 +109,63 @@ section.hero {
   border-radius: 30px;
 }
 
+// ==============================
+// Custom Bootstrap Class Styles
+// ==============================
+
+// ==============================
+// Custom Other Styles
+// ==============================
+
+// ==============================
+// Media Query
+// ==============================
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+
+  .shadow {
+    margin: 0;
+  }
+
+  .calendar {
+    width: 100%;
+  }
+}
+
+/* Media Query for Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 0;
+  }
+
+  .shadow {
+    margin: 0;
+  }
+
+  .calendar {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1370px) {
+  body {
+    margin: 0;
+  }
+
+  .shadow {
+    margin: 0;
+  }
+
+  .calendar {
+    width: 600px;
+  }
+}
+
+/* Halaman Login Register */
 @media only screen and (max-width: 768px) {
   .box-area {
     margin: 0 10px;
@@ -148,50 +180,3 @@ section.hero {
     padding: 20px;
   }
 }
-
-// ==============================
-// Variables
-// ==============================
-
-// ==============================
-// Custom HTML Element Styles
-// ==============================
-
-// ==============================
-// Custom New Class Styles
-// ==============================
-
-// Custom Background Color
-.bg-brown {
-  background-color: $primary-color;
-}
-
-// Custom Button Color
-.btn-white-brown {
-  outline: 1px solid $primary-color;
-  &:hover {
-    background-color: $primary-color;
-    color: white;
-  }
-}
-.btn-brown-darkbrown {
-  background-color: $primary-color;
-  color: white;
-  &:hover {
-    background-color: #4a3323;
-    color: white;
-  }
-}
-
-// ==============================
-// Custom Bootstrap Class Styles
-// ==============================
-
-// ==============================
-// Custom Other Styles
-// ==============================
-
-// ==============================
-// Media Query
-// ==============================
-
