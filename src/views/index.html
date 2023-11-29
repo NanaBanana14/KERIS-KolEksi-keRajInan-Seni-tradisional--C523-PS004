@@ -19,28 +19,26 @@
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
 
-    <main>
-      <div class="main-content mt-5">
-        <div class="container py-5">
-          <section class="hero">
-            <div class="row">
-              <!--text-->
-              <div class="col-md-5">
-                <div class="text">
-                  <h3>Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</h3>
-                  <p1>Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi ?</p1>
-                </div>
-                <div class="buttons">
-                  <a href="#" class="btn btn-primary">Mulai</a>
-                </div>
+    <main style="margin-top: 55px">
+      <div class="container py-5">
+        <section class="hero">
+          <div class="row">
+            <!--text-->
+            <div class="col-md d-flex flex-column align-items-start justify-content-center">
+              <div class="text">
+                <h3>Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</h3>
+                <p>Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi?</p>
               </div>
-              <!--img-->
-              <div class="col-md-5">
-                <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Flp.1.png?alt=media&token=f5352feb-7553-4909-802d-fdd2b30bafb7" alt="lp" class="w-100" />
+              <div class="buttons">
+                <a href="#" class="btn btn-brown-darkbrown">Mulai</a>
               </div>
             </div>
-          </section>
-        </div>
+            <!--img-->
+            <div class="col-md">
+              <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Flp.1.png?alt=media&token=f5352feb-7553-4909-802d-fdd2b30bafb7" alt="lp" class="w-100" />
+            </div>
+          </div>
+        </section>
       </div>
 
       <div class="img-fluid background-batik-custom"></div>
@@ -51,8 +49,8 @@
         <p>Eksplorasi beragam karya seni yang telah diciptakan oleh pengrajin seni dari berbagai wilayah di Indonesia melalui platform ini.</p>
       </div>
 
-      <div class="container d-flex justify-content-center">
-        <div class="card mb-3" style="max-width: 260px">
+      <div class="container d-flex justify-content-center gap-3 flex-wrap">
+        <div class="card" style="width: 260px">
           <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fgaleri%20seni.svg?alt=media&token=6316ef74-cac0-407b-83d0-957076cc1472" alt="card" />
           <div class="card-body text-center">
             <div class="p-2 embed-responsive embed-responsive-16by9">
@@ -62,7 +60,7 @@
           </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 260px">
+        <div class="card" style="width: 260px">
           <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fcalendar%20budaya.png?alt=media&token=92d54119-c894-43d7-8c9d-cf74b71425a2" alt="card" />
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Kalender Budaya</h5>
@@ -70,7 +68,7 @@
           </div>
         </div>
 
-        <div class="card mb-3" style="max-width: 260px">
+        <div class="card" style="width: 260px">
           <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FNews.png?alt=media&token=302776bf-bf47-4761-89f0-fd9a98760ebd" alt="card" />
           <div class="card-body text-center">
             <h5 class="card-title mb-0">News</h5>
@@ -115,84 +113,84 @@
         </div>
       </div>
 
-      <div>
-        <div class="content-wrapper mt-5 card-center">
-          <div class="row mb-10">
-            <div class="col-sm-2">
-              <div class="card" style="width: 12rem">
-                <div class="card-body">
-                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fman.png?alt=media&token=3e1619e7-e194-4c8d-adb4-4ab6d10dbf4c" alt="Card image" />
-                  <h5 class="card-title">Wanda Putra Ramadhan</h5>
-                  <p class="card-text">Front End Developer</p>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
-                </div>
-              </div>
+      <div class="container mb-4 d-flex flex-wrap gap-4 justify-content-center">
+        <div class="card" style="width: 14rem">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fman.png?alt=media&token=3e1619e7-e194-4c8d-adb4-4ab6d10dbf4c" alt="Card image" />
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">Wanda Putra R.</h5>
+            <p>Front End Developer</p>
+            <div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-sm-2">
-              <div class="card" style="width: 12rem">
-                <div class="card-body">
-                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
-                  <h5 class="card-title">Kamania D.M</h5>
-                  <p class="card-text">Front End Developer</p>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
-                </div>
-              </div>
+            <a href="#" class="btn btn-brown-darkbrown">VIEW PROFILE</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">Kamania</h5>
+            <p>Front End Developer</p>
+            <div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-sm-2">
-              <div class="card" style="width: 12rem">
-                <div class="card-body">
-                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
-                  <h5 class="card-title">Ika Triyana</h5>
-                  <p class="card-text">Front End Developer</p>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
-                </div>
-              </div>
+            <a href="#" class="btn btn-brown-darkbrown">VIEW PROFILE</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">Kamania</h5>
+            <p>Front End Developer</p>
+            <div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-sm-2">
-              <div class="card" style="width: 12rem">
-                <div class="card-body">
-                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
-                  <h5 class="card-title">Noorhani</h5>
-                  <p class="card-text">Front End Developer</p>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
-                </div>
-              </div>
+            <a href="#" class="btn btn-brown-darkbrown">VIEW PROFILE</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">Kamania</h5>
+            <p>Front End Developer</p>
+            <div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-sm-2">
-              <div class="card" style="width: 12rem">
-                <div class="card-body">
-                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
-                  <h6 class="card-title">Hajiria Tandawali</h6>
-                  <p class="card-text">Front End Developer</p>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
-                </div>
-              </div>
+            <a href="#" class="btn btn-brown-darkbrown">VIEW PROFILE</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 14rem">
+          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
+          <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title">Kamania</h5>
+            <p>Front End Developer</p>
+            <div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+            <a href="#" class="btn btn-brown-darkbrown">VIEW PROFILE</a>
           </div>
         </div>
       </div>
