@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
   <body>
     <header>
@@ -14,13 +16,24 @@
     <main>
       <div class="main-content mt-5">
         <div class="container py-5">
-          <div class="content-wrapper">
-            <div class="text-column">
-              <!-- Deskripsi Tulisan -->
-              <div class="description">
-                <h3 class="mb-3">Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</h3>
-                <p>Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi?</p>
-                <button type="button" class="btn btn-mulai">Mulai</button>
+            <section class="hero">
+                <div class="row">
+                  <!--text-->
+                  <div class="col-md-5">
+                    <div class="text">
+                      <h3>Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</h3>
+                      <p1>Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi ?</p1>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="btn btn-primary">Mulai</a>
+                    </div>
+                  </div>
+                  <!--img-->
+                  <div class="col-md-5">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Flp.1.png?alt=media&token=f5352feb-7553-4909-802d-fdd2b30bafb7" alt="lp" class="w-100">
+                  </div>
+                </div>
+              </section>
               </div>
             </div>
 
@@ -93,10 +106,21 @@
       </div>
 
       <div class="img-fluid background-batik-custom">
-        <div></div>
       </div>
 
       <div class="text-center mt-4">
+        <h3 class="mb-3">Apa Yang Bisa Kamu Temukan Disini ?</h3>
+        <p class="text-center text-active fw-bolder">_________________</p>
+        <p>Eksplorasi beragam karya seni yang telah diciptakan oleh pengrajin seni dari berbagai wilayah di Indonesia melalui platform ini.</p>
+      </div>
+
+    <div class="container d-flex justify-content-center">
+      <div class="card mb-3" style="max-width: 260px;">
+        <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fgaleri%20seni.svg?alt=media&token=6316ef74-cac0-407b-83d0-957076cc1472" alt="card">
+        <div class="card-body text-center">
+          <div class="p-2 embed-responsive embed-responsive-16by9">
+          <h5 class="card-title mb-0">Galeri Seni</h5>
+          <p class="card-text">Fitur yang dapat digunakan oleh Seniman untuk pamerkan karya & sumber info bagi penggemar."</p>
         <h3 class="mb-3">About-Us</h3>
         <p>Mari Mengenal Lebih Jauh dengan Para Developer KERIS !!</p>
         <p>Ketuk Salah satu social media nya untuk mengetahui lebih lanjut</p>
@@ -110,6 +134,7 @@
           <p class="card-text" style="font-size: 12px; margin-bottom: 5px">Front End Developer</p>
           <a href="#" class="btn btn-primary btn-sm" style="font-size: 10px; padding: 5px 10px">See Profile</a>
         </div>
+      </div>
       </div>
 
       <div class="card-img" style="max-width: 200px">
@@ -129,7 +154,129 @@
           <a href="#" class="btn btn-primary btn-sm" style="font-size: 10px; padding: 5px 10px">See Profile</a>
         </div>
       </div>
+  </div>
+ </div>
+ 
+ <div class="container py-6">
+  <div class="content-wrapper mt-5">
+    <div class="hero">
+        <div class="row align-items-center">
+          <!--text-->
+          <div class="col-md-5">
+            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FQuestions-pana.png?alt=media&token=e6686d89-0708-48cb-b68d-4f9f24b6d584" alt="lp" class="w-100">
+          </div>
+          <!--img-->
+          <div class="col-md-6 text-md-start">
+            <div class="text">
+              <h3>Apa Itu KERIS ?</h3>
+              <p>KERIS adalah sebuah website yang  didedikasikan untuk mempromosikan dan melestarikan keberagaman seni dan budaya tradisional Indonesia. Kami menciptakan platform ini sebagai jawaban terhadap tantangan yang dihadapi oleh seniman dan penggemar seni tradisional. Melalui fitur-fitur seperti "GaleriSeni," "DetailSeni," dan "ReviewKarya," kami membuka ruang bagi seniman untuk memamerkan karyanya, memberikan informasi rinci, dan menerima umpan balik dari penggemar. Fitur "PustakaIlmu" dan "KalenderBudaya" bertujuan memberikan informasi dan meningkatkan pengetahuan masyarakat tentang seni tradisional yang belum dikenal. Bergabunglah dengan kami dalam menjaga dan menghargai kekayaan budaya Indonesia melalui KERIS (KolEksi keRajInan Seni tradisional).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="img-fluid background-batik-custom">
+    </div
+
+    <div>
+      <div class="text-center mt-4">
+      <h3 class="mb-3 text-center">About-Us</h3>
+      <p class="text-center text-active fw-bolder">_________________</p>
+      <p class="text-center text-wrap">Mari Mengenal Lebih Jauh dengan Para Developer KERIS !! </p>
+      <p class="text-center text-wrap">Ketuk Salah satu social media nya untuk mengetahui lebih lanjut</p>
+      </div>
+    </div>
+    
+    <div>
+      <div class="content-wrapper mt-5 card-center "> 
+        <div class="row mb-10">
+          <div class="col-sm-2">
+            <div class="card" style="width: 12rem;">
+              <div class="card-body">
+                <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fman.png?alt=media&token=3e1619e7-e194-4c8d-adb4-4ab6d10dbf4c" alt="Card image">
+                <h5 class="card-title">Wanda Putra Ramadhan</h5>
+                <p class="card-text">Front End Developer</p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="btn btn-primary">VIEW PROFILE</a>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image">
+                  <h5 class="card-title">Kamania D.M</h5>
+                  <p class="card-text">Front End Developer</p>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image">
+                  <h5 class="card-title">Ika Triyana</h5>
+                  <p class="card-text">Front End Developer</p>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image">
+                  <h5 class="card-title">Noorhani</h5>
+                  <p class="card-text">Front End Developer</p>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card" style="width: 12rem;">
+                <div class="card-body">
+                  <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image">
+                  <h6 class="card-title">Hajiria Tandawali </h6>
+                  <p class="card-text">Front End Developer</p>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="btn btn-primary">VIEW PROFILE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+ 
+    <footer>
+      <div class="main-footer background-custom">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
       <div class="card-img" style="max-width: 200px">
         <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fwoman.png?alt=media&token=ee6c64cd-5fb4-44dd-bd2b-63b3b2425028" alt="Card image" />
         <div class="card-body" style="padding: 10px">
