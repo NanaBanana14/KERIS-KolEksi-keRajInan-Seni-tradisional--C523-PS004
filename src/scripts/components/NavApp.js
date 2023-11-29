@@ -22,9 +22,9 @@ class NavApp extends LitWithoutShadowDom {
   // eslint-disable-next-line class-methods-use-this
   render() {
     return html`
-      <nav class="navbar navbar-expand-md navbar-dark custom-navbar fixed-top">
+      <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container d-flex align-items-center">
-          <img class="custom-logo-img" src="https://firebasestorage.googleapis.com/v0/b/restapi-keris.appspot.com/o/logo%2Flogo-keris.png?alt=media&token=67fdcc3e-f297-4fc6-b5f4-5d80cdde4338" alt="">
+          <img class="custom-logo-img" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Flogo-keris.png?alt=media&token=687e3d0d-bec8-4ed2-b8a3-7264b45236c9" alt="">
           <button
             class="navbar-toggler custom-toggler-color"
             type="button"

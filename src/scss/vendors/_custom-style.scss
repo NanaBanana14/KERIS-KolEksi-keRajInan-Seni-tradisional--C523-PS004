@@ -6,21 +6,15 @@
 
 // Variables
 $primary-color: #61422e;
-$background-color: white;
 
 // Body Styles
 body {
   font-family: 'Inter', sans-serif;
 }
 
-// Custom Navbar Styles
-.custom-navbar {
-  background-color: $background-color;
-}
-
 // Custom Logo Image Styles
 .custom-logo-img {
-  width: 150px;
+  height: 40px;
 }
 
 .flower-icon-img {
@@ -30,7 +24,6 @@ body {
 .custom-toggler-color {
   background-color: $primary-color;
   border-color: $primary-color;
-  color: $primary-color;
 }
 
 // Text Active Styles
@@ -38,16 +31,6 @@ body {
   color: $primary-color;
   font-weight: bold;
   font-size: 16px;
-}
-
-// Background Custom Styles
-.background-custom {
-  background-color: $primary-color;
-}
-
-// Dropdown Styles
-.dropdown-toggle {
-  background-color: $primary-color;
 }
 
 //
@@ -64,8 +47,8 @@ body {
   border-radius: 10px;
   width: 800px;
   height: 600px;
-  frameborder: 0;
-  scrolling: no;
+  mask-border: 0;
+  scroll-margin: no;
 }
 
 .background-batik-custom {
@@ -119,42 +102,87 @@ body {
 }
 
 /* Login Register */
-body {
-    font-family: 'Inter', sans-serif;
-    background: #ececec;
-}
 
 .box-area {
-    width: 930px;
+  width: 930px;
 }
 
 .right-box {
-    padding: 40px 30px 40px 40px;
+  padding: 40px 30px 40px 40px;
 }
 
 ::placeholder {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .rounded-4 {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .rounded-5 {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-    .box-area {
-        margin: 0 10px;
-    }
+  .box-area {
+    margin: 0 10px;
+  }
 
-    .left-box {
-        height: 100px;
-        overflow: hidden;
-    }
+  .left-box {
+    height: 100px;
+    overflow: hidden;
+  }
 
-    .right-box {
-        padding: 20px;
-    }
+  .right-box {
+    padding: 20px;
+  }
 }
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// ==============================
+// Variables
+// ==============================
+
+// ==============================
+// Custom HTML Element Styles
+// ==============================
+
+// ==============================
+// Custom New Class Styles
+// ==============================
+
+// Custom Background Color
+.bg-brown {
+  background-color: $primary-color;
+}
+
+// Custom Button Color
+.btn-white-brown {
+  outline: 1px solid $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+.btn-brown-darkbrown {
+  background-color: $primary-color;
+  color: white;
+  &:hover {
+    background-color: #4a3323;
+    color: white;
+  }
+}
+
+// ==============================
+// Custom Bootstrap Class Styles
+// ==============================
+
+// ==============================
+// Custom Other Styles
+// ==============================
+
+// ==============================
+// Media Query
+// ==============================
+
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

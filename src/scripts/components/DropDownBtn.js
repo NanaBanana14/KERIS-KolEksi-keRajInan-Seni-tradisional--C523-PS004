@@ -6,7 +6,7 @@ class DropdownBtn extends LitWithoutShadowDom {
   render() {
     return html`
       <li class="dropdown show nav-item">
-        <a class="btn background-custom dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
+        <a class="btn btn-brown-darkbrown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
         <div class="dropdown-menu" aria-labelledby="Menu">
           <a class="dropdown-item" href="/menu/galeri-seni.html">Galeri Seni</a>
           <a class="dropdown-item" href="/menu/news.html">News</a>
