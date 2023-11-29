@@ -2,6 +2,7 @@ import { html } from 'lit';
 import LitWithoutShadowDom from './base/LitWithoutShadowDom';
 
 class NavLinks extends LitWithoutShadowDom {
+  // eslint-disable-next-line class-methods-use-this
   render() {
     return html`
       <ul class="navbar-nav d-flex align-items-center gap-3">

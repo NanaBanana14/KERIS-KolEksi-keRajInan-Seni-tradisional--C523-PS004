@@ -10,7 +10,7 @@ class NavLink extends LitWithoutShadowDom {
   constructor() {
     super();
     // eslint-disable-next-line no-underscore-dangle
-    this._checkAvailabilityProperty()
+    this._checkAvailabilityProperty();
   }
 
   // eslint-disable-next-line no-underscore-dangle
@@ -28,5 +28,5 @@ class NavLink extends LitWithoutShadowDom {
     `;
   }
 }
- 
+
 customElements.define('nav-link', NavLink);

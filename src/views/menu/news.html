@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
   </head>
@@ -13,20 +10,16 @@
     <header>
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
- 
+
     <main>
-        <div class="background-custom py-5 p-5 mt-5">
-          <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-              <h1 class="text-white text-center">Temukan Event dan Berita Seputar Seni Disini</h1>
-            </div>
-            <div class="col-md-6">
-              <custom-carousel></custom-carousel>
-            </div>
+      <div class="bg-brown py-5 p-5 mt-5">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <h1 class="text-white text-center">Temukan Event dan Berita Seputar Seni Disini</h1>
           </div>
-        </div>      
-        <div class="img-fluid background-batik-custom">
-          <div></div>
+          <div class="col-md-6">
+            <custom-carousel></custom-carousel>
+          </div>
         </div>
         <div class="container mt-5">
           <div class="column">
@@ -55,9 +48,34 @@
       <div class="main-footer background-custom">
         <div class="container px-3 py-4">
           <footer-app></footer-app>
+      </div>
+      <div class="img-fluid background-batik-custom">
+        <div></div>
+      </div>
+      <div class="container mt-5">
+        <div class="column">
+          <div class="col-md-6">
+            <div class="py-2">
+              <h2>Event__________</h2>
+              <div class="shadow">
+                <!-- content for the "Event" section goes here -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="py-2">
+              <h2>News__________</h2>
+              <div class="shadow">
+                <!-- content for the "News" section goes here -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </main>
+
+    <footer class="bg-brown">
+      <footer-app></footer-app>
     </footer>
   </body>
-
 </html>
