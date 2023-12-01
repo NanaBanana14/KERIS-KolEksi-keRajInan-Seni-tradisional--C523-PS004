@@ -65,7 +65,7 @@ const Arts = {
   async getAllEvents() {
     try {
       const response = await axios.get(API_ENDPOINT.EVENTS);
-      return response.data;
+      return response.data.events; // Updated response data structure
     } catch (error) {
       console.error('Error fetching events:', error);
       throw error;
@@ -81,7 +81,6 @@ const Arts = {
       throw error;
     }
   },
-
 };
 
 export default Arts;

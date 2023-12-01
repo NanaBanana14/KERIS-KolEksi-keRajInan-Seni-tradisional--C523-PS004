@@ -1,22 +1,29 @@
-import Arts from '../../../network/arts';
+async function showEventDetailByUrl(detailUrl) {
+  try {
+    const eventDetailContainer = document.getElementById('event-detail-container');
+    const response = await fetch(detailUrl);
+    const eventDetail = await response.json();
 
-function showEventDetail(Id) {
-  const eventDetailContainer = document.getElementById('event-detail-container');
-  const eventDetail = Arts.getEventById(Id);
+    if (!eventDetail) {
+      console.error(`Error: No data found for event with URL ${detailUrl}`);
+      return;
+    }
 
-  // Perbarui konten event-detail-container dengan detail acara
-  eventDetailContainer.innerHTML = `
-    <div class="card mb-3 col-md-8">
-      <img src="${eventDetail['image-url']}" class="card-img-top" alt="${eventDetail.name}">
-      <div class="card-body">
-        <h5 class="card-title">${eventDetail.name}</h5>
-        <p class="card-text"><strong>Tanggal:</strong> ${eventDetail.date}</p>
-        <p class="card-text"><strong>Deskripsi:</strong> ${eventDetail.description}</p>
-        <!-- Tambahkan elemen lain sesuai kebutuhan -->
+    eventDetailContainer.innerHTML = `
+      <div class="card mb-3 col-md-8">
+        <img src="${eventDetail['image-url']}" class="card-img-top" alt="${eventDetail.name}">
+        <div class="card-body">
+          <h5 class="card-title">${eventDetail.name}</h5>
+          <p class="card-text"><strong>Tanggal:</strong> ${eventDetail.date}</p>
+          <p class="card-text"><strong>Deskripsi:</strong> ${eventDetail.description}</p>
+          <!-- Tambahkan elemen lain sesuai kebutuhan -->
+        </div>
       </div>
-    </div>
-  `;
-  // Implementasikan logika atau perubahan tampilan tambahan sesuai kebutuhan.
+    `;
+    // dikasih custom tamplian pas dah selesai
+  } catch (error) {
+    console.error(`Error fetching event detail: ${error.message}`);
+  }
 }
 
-export default showEventDetail;
+export default showEventDetailByUrl;
