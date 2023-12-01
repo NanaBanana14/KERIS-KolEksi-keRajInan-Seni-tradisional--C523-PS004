@@ -44,6 +44,15 @@ body {
   }
 }
 
+.btn-brown-white {
+  background-color: $primary-color;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: $primary-color;
+  }
+}
+
 /* Custom Logo Image Styles */
 .custom-logo-img {
   height: 40px;
