@@ -1,6 +1,36 @@
+import { createEventDetailTemplate } from '../../templates/template-creator';
+
+function hideEventDetailModal() {
+  const modalElement = document.getElementById('eventDetailModal');
+
+  // Sembunyikan modal
+  modalElement.style.display = 'none';
+  modalElement.classList.remove('show');
+}
+
+function showEventDetailModal(eventDetail) {
+  const modalElement = document.getElementById('eventDetailModal');
+
+  // Manually show the modal
+  modalElement.style.display = 'block';
+  modalElement.classList.add('show');
+
+  // Isi konten modal dengan detail acara
+  modalElement.querySelector('.modal-title').textContent = eventDetail.name;
+
+  // Gunakan template untuk mengisi konten modal
+  const eventDetailTemplate = createEventDetailTemplate(eventDetail);
+  modalElement.querySelector('.modal-body').innerHTML = eventDetailTemplate;
+
+  // Atur fokus ke modal
+  modalElement.focus();
+
+  // Tambahkan event listener untuk tombol close modal
+  modalElement.querySelector('.close').addEventListener('click', hideEventDetailModal);
+}
+
 async function showEventDetailByUrl(detailUrl) {
   try {
-    const eventDetailContainer = document.getElementById('event-detail-container');
     const response = await fetch(detailUrl);
     const eventDetail = await response.json();
 
@@ -9,18 +39,8 @@ async function showEventDetailByUrl(detailUrl) {
       return;
     }
 
-    eventDetailContainer.innerHTML = `
-      <div class="card mb-3 col-md-8">
-        <img src="${eventDetail['image-url']}" class="card-img-top" alt="${eventDetail.name}">
-        <div class="card-body">
-          <h5 class="card-title">${eventDetail.name}</h5>
-          <p class="card-text"><strong>Tanggal:</strong> ${eventDetail.date}</p>
-          <p class="card-text"><strong>Deskripsi:</strong> ${eventDetail.description}</p>
-          <!-- Tambahkan elemen lain sesuai kebutuhan -->
-        </div>
-      </div>
-    `;
-    // dikasih custom tamplian pas dah selesai
+    // Panggil fungsi showEventDetailModal untuk menampilkan detail acara dalam modal
+    showEventDetailModal(eventDetail);
   } catch (error) {
     console.error(`Error fetching event detail: ${error.message}`);
   }

@@ -1,14 +1,13 @@
 import Arts from '../../../network/arts';
 import { createEventTemplate } from '../../templates/template-creator';
-import showEventDetail from './eventdetail';
+import showEventDetailByUrl from './eventdetail';
 
 function handleEventClick(event) {
   event.preventDefault();
   const detailUrl = event.target.getAttribute('data-detail-url');
 
   if (detailUrl) {
-    // console.log('Clicked Event Detail URL:', detailUrl);
-    showEventDetail(detailUrl);
+    showEventDetailByUrl(detailUrl);
   } else {
     console.error('Error: URL Detail Event tidak terdefinisi.');
   }
@@ -17,9 +16,6 @@ function handleEventClick(event) {
 async function eventlist() {
   try {
     const eventsResponse = await Arts.getAllEvents();
-    // untuk menampilkan respons API ke console
-    // console.log('API Response:', eventsResponse);
-
     const events = Array.isArray(eventsResponse) ? eventsResponse : Object.values(eventsResponse);
     const eventListContainer = document.getElementById('event-list-container');
 
@@ -33,7 +29,7 @@ async function eventlist() {
       button.addEventListener('click', (event) => handleEventClick(event));
     });
   } catch (error) {
-    // return error;
+    console.error('Error fetching events:', error.message);
   }
 }
 

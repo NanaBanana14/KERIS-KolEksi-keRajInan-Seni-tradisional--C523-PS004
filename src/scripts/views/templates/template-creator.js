@@ -10,6 +10,18 @@ const createEventTemplate = (event) => `
   </div>
 `;
 
+const createEventDetailTemplate = (eventDetail) => `
+  <div class="card mb-3 col-md-8">
+    <img src="${eventDetail['image-url']}" class="card-img-top" alt="${eventDetail.name}">
+    <div class="card-body">
+      <h5 class="card-title">${eventDetail.name}</h5>
+      <p class="card-text"><strong>Tanggal:</strong> ${eventDetail.date}</p>
+      <p class="card-text"><strong>Deskripsi:</strong> ${eventDetail.description}</p>
+      <!-- Tambahkan elemen lain sesuai kebutuhan -->
+    </div>
+  </div>
+`;
+
 const createNewsTemplate = (news) => `
   <div class="card mb-3 col-md-4 position-relative p-0">
     <img src="${news['image-url']}" class="card-img-top" alt="${news['title']}">
@@ -23,5 +35,6 @@ const createNewsTemplate = (news) => `
 
 export {
   createEventTemplate,
+  createEventDetailTemplate,
   createNewsTemplate,
 };
