@@ -11,7 +11,7 @@ import './views/pages/menu/main';
 import * as bootstrap from 'bootstrap';
 
 const routes = {
-  '/': Home,
+  // '/': Home,
 };
 
 const detectRoute = () => routes[window.location.pathname];
