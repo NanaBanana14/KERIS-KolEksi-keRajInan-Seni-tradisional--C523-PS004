@@ -1,4 +1,21 @@
 /* eslint-disable */
+
+const createArtTemplate = (art) => `
+  <div class="card" style="width: 18rem">
+    <img
+      src="${art.image_url}"
+      class="card-img-top"
+      alt="${art.name}"
+      style="height: 200px; object-fit: cover"
+    />
+    <div class="card-body d-flex flex-column" style="height: 170px">
+      <h5 class="card-title">${art.name}</h5>
+      <p class="card-text flex-grow-1" style="overflow: hidden">${art.description}</p>
+      <a href="" class="btn btn-brown-darkbrown">Read More</a>
+    </div>
+  </div>
+`;
+
 const createEventTemplate = (event) => `
   <div class="card mb-3 col-md-4 position-relative p-0" id="event-${event.id}">
     <img src="${event['image-url']}" class="card-img-top" alt="${event['name']}">
@@ -38,8 +55,4 @@ const createNewsTemplate = (news) => `
   </div>
 `;
 
-export {
-  createEventTemplate,
-  createEventDetailTemplate,
-  createNewsTemplate,
-};
+export { createArtTemplate, createEventTemplate, createEventDetailTemplate, createNewsTemplate };
