@@ -4,6 +4,7 @@ import './NavLink';
 import './DropDownBtn';
 import './CustomCarousel';
 import './CustomCarouselGaleri';
+import './ModalEvent';
 
 import './FooterApp';
 

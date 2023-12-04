@@ -15,11 +15,9 @@ async function newslist() {
         const newsCard = createNewsTemplate(newsItem);
         newsListContainer.innerHTML += newsCard;
       });
-    } else {
-      console.error('Error: Respons dari Arts.getAllNews() bukanlah sebuah array.');
     }
   } catch (error) {
-    console.error('Error fetching and displaying news:', error);
+    // error handling misal dibutuhkan hehe
   }
 }
 

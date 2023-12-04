@@ -1,22 +1,43 @@
-import Arts from '../../../network/arts';
+import { createEventDetailTemplate } from '../../templates/template-creator';
 
-function showEventDetail(Id) {
-  const eventDetailContainer = document.getElementById('event-detail-container');
-  const eventDetail = Arts.getEventById(Id);
+function hideEventDetailModal() {
+  const modalElement = document.getElementById('eventDetailModal');
 
-  // Perbarui konten event-detail-container dengan detail acara
-  eventDetailContainer.innerHTML = `
-    <div class="card mb-3 col-md-8">
-      <img src="${eventDetail['image-url']}" class="card-img-top" alt="${eventDetail.name}">
-      <div class="card-body">
-        <h5 class="card-title">${eventDetail.name}</h5>
-        <p class="card-text"><strong>Tanggal:</strong> ${eventDetail.date}</p>
-        <p class="card-text"><strong>Deskripsi:</strong> ${eventDetail.description}</p>
-        <!-- Tambahkan elemen lain sesuai kebutuhan -->
-      </div>
-    </div>
-  `;
-  // Implementasikan logika atau perubahan tampilan tambahan sesuai kebutuhan.
+  // Hidden modal
+  modalElement.style.display = 'none';
+  modalElement.classList.remove('show');
 }
 
-export default showEventDetail;
+function showEventDetailModal(eventDetail) {
+  const modalElement = document.getElementById('eventDetailModal');
+
+  // Show Modal
+  modalElement.style.display = 'block';
+  modalElement.classList.add('show');
+
+  // content
+  const eventDetailTemplate = createEventDetailTemplate(eventDetail);
+  modalElement.querySelector('.modal-body').innerHTML = eventDetailTemplate;
+
+  modalElement.focus();
+
+  modalElement.querySelector('.close').addEventListener('click', hideEventDetailModal);
+}
+
+async function showEventDetailByUrl(detailUrl) {
+  try {
+    const response = await fetch(detailUrl);
+    const eventDetail = await response.json();
+
+    if (!eventDetail) {
+      console.error(`Error: No data found for event with URL ${detailUrl}`);
+      return;
+    }
+
+    showEventDetailModal(eventDetail);
+  } catch (error) {
+    console.error(`Error fetching event detail: ${error.message}`);
+  }
+}
+
+export default showEventDetailByUrl;
