@@ -5,6 +5,12 @@ import './DropDownBtn';
 import './CustomCarousel';
 import './CustomCarouselGaleri';
 import './ModalEvent';
+import './home-page/DeveloperCard';
+import './home-page/About-Us';
+import './home-page/HeroApp';
+import './home-page/ExploreCard';
+import './home-page/KerisDesc';
+import './home-page/ExploreSection';
 
 import './FooterApp';
 
