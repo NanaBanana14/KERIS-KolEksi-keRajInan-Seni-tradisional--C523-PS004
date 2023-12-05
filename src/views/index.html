@@ -5,192 +5,23 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
-    <!--font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
   </head>
   <body>
     <header>
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
-
     <main style="margin-top: 55px">
-      <div class="container py-5">
-        <section class="hero">
-          <div class="row">
-            <!--text-->
-            <div class="col-md d-flex flex-column align-items-start justify-content-center">
-              <div class="text">
-                <h3>Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</h3>
-                <p>Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi?</p>
-              </div>
-              <div class="buttons">
-                <a href="#all-about-here" class="btn btn-brown-darkbrown">Mulai</a>
-              </div>
-            </div>
-            <!--img-->
-            <div class="col-md">
-              <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Flp.1.png?alt=media&token=f5352feb-7553-4909-802d-fdd2b30bafb7" alt="lp" class="w-100" />
-            </div>
-          </div>
-        </section>
-      </div>
-
+      <hero-app></hero-app>
       <div id="all-about-here" class="img-fluid background-batik-custom"></div>
-
-      <div class="text-center mt-4">
-        <h3 class="mb-3">Apa Yang Bisa Kamu Temukan Disini ?</h3>
-        <p class="text-center text-active fw-bolder">_________________</p>
-        <p>Eksplorasi beragam karya seni yang telah diciptakan oleh pengrajin seni dari berbagai wilayah di Indonesia melalui platform ini.</p>
-      </div>
-
-      <div class="container d-flex justify-content-center gap-3 flex-wrap">
-        <div class="card" style="width: 260px">
-          <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fgaleri%20seni.svg?alt=media&token=6316ef74-cac0-407b-83d0-957076cc1472" alt="card" />
-          <div class="card-body text-center">
-            <div class="p-2 embed-responsive embed-responsive-16by9">
-              <h5 class="card-title mb-0">Galeri Seni</h5>
-              <p class="card-text">Fitur yang dapat digunakan oleh Seniman untuk pamerkan karya & sumber info bagi penggemar."</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="width: 260px">
-          <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fcalendar%20budaya.png?alt=media&token=92d54119-c894-43d7-8c9d-cf74b71425a2" alt="card" />
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0">Kalender Budaya</h5>
-            <p class="card-text">Fitur yang digunakan untuk mengakses informasi jadwal acara seni yang akan dilaksanakan."</p>
-          </div>
-        </div>
-
-        <div class="card" style="width: 260px">
-          <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FNews.png?alt=media&token=302776bf-bf47-4761-89f0-fd9a98760ebd" alt="card" />
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0">News</h5>
-            <p class="card-text">Fitur yang menyajikan informasi berita dan event terkini seputar karya seni."</p>
-          </div>
-        </div>
-      </div>
-
+      <explore-section></explore-section>
       <div class="container py-6">
         <div class="content-wrapper mt-5">
-          <div class="hero">
-            <div class="row align-items-center">
-              <!--text-->
-              <div class="col-md-5">
-                <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FQuestions-pana.png?alt=media&token=e6686d89-0708-48cb-b68d-4f9f24b6d584" alt="lp" class="w-100" />
-              </div>
-              <!--img-->
-              <div class="col-md-6 text-md-start">
-                <div class="text">
-                  <h3>Apa Itu KERIS ?</h3>
-                  <p>
-                    KERIS adalah sebuah website yang didedikasikan untuk mempromosikan dan melestarikan keberagaman seni dan budaya tradisional Indonesia. Kami menciptakan platform ini sebagai jawaban terhadap tantangan yang dihadapi oleh
-                    seniman dan penggemar seni tradisional. Melalui fitur-fitur seperti "GaleriSeni," "DetailSeni," dan "ReviewKarya," kami membuka ruang bagi seniman untuk memamerkan karyanya, memberikan informasi rinci, dan menerima umpan
-                    balik dari penggemar. Fitur "PustakaIlmu" dan "KalenderBudaya" bertujuan memberikan informasi dan meningkatkan pengetahuan masyarakat tentang seni tradisional yang belum dikenal. Bergabunglah dengan kami dalam menjaga
-                    dan menghargai kekayaan budaya Indonesia melalui KERIS (KolEksi keRajInan Seni tradisional).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <keris-desc></keris-desc>
         </div>
       </div>
-
       <div id="about-us" class="img-fluid background-batik-custom"></div>
-
-      <div>
-        <div class="text-center mt-4">
-          <h3 class="mb-3 text-center">About-Us</h3>
-          <p class="text-center text-active fw-bolder">_________________</p>
-          <p class="text-center text-wrap">Mari Mengenal Lebih Jauh dengan Para Developer KERIS !!</p>
-          <p class="text-center text-wrap">Ketuk Salah satu social media nya untuk mengetahui lebih lanjut</p>
-        </div>
-      </div>
-
-      <div class="container mb-4 d-flex flex-wrap gap-4 justify-content-center">
-        <div class="card border-0" style="width: 14rem">
-          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fabout-us%2FWanda-AboutUs.png?alt=media&token=00470b37-1c84-49d9-8f8e-24388bcaac83" alt="Wanda Putra Ramadhan" />
-          <div class="card-body d-flex flex-column justify-content-evenly align-items-center">
-            <h5 class="card-title m-0">Wanda Putra R.</h5>
-            <p class="m-0">Front End Developer</p>
-            <div>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card border-0" style="width: 14rem">
-          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fabout-us%2FIka_AboutUs.png?alt=media&token=24a35179-c43a-4a43-bfd0-5ecb29c74fdf" alt="Ika Triyana" />
-          <div class="card-body d-flex flex-column justify-content-evenly align-items-center">
-            <h5 class="card-title m-0">Ika Triyana</h5>
-            <p class="m-0">Front End Developer</p>
-            <div>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card border-0" style="width: 14rem">
-          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fabout-us%2FHajiria_AboutUs.png?alt=media&token=a34eab1c-6c86-4a88-a6f4-058374b4688e" alt="Hajiria Tandawali" />
-          <div class="card-body d-flex flex-column justify-content-evenly align-items-center">
-            <h5 class="card-title m-0">Hajiria Tandawali</h5>
-            <p class="m-0">Front End Developer</p>
-            <div>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card border-0" style="width: 14rem">
-          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fabout-us%2FKamania_AboutUs.png?alt=media&token=c0552d3e-8f20-4d7d-aaf7-1a6885aa5138" alt="Kamania D.M" />
-          <div class="card-body d-flex flex-column justify-content-evenly align-items-center">
-            <h5 class="card-title m-0">Kamania D.M</h5>
-            <p class="m-0">Front End Developer</p>
-            <div>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card border-0" style="width: 14rem">
-          <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fabout-us%2FNoorhani_AboutUs.png?alt=media&token=fa399156-9939-4e30-84bd-68476110081c" alt="Noorhani" />
-          <div class="card-body d-flex flex-column justify-content-evenly align-items-center">
-            <h5 class="card-title m-0">Noorhani</h5>
-            <p class="m-0">Front End Developer</p>
-            <div>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <about-us></about-us>
     </main>
-
     <footer class="bg-brown">
       <footer-app></footer-app>
     </footer>
