@@ -11,7 +11,7 @@ const createArtTemplate = (art) => `
     <div class="card-body d-flex flex-column" style="height: 170px">
       <h5 class="card-title">${art.name}</h5>
       <p class="card-text flex-grow-1" style="overflow: hidden">${art.description}</p>
-      <a href="" class="btn btn-brown-darkbrown">Read More</a>
+      <a href="./detail-galeri-seni.html#${art.id}" class="btn btn-brown-darkbrown">Read More</a>
     </div>
   </div>
 `;
