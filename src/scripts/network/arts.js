@@ -32,6 +32,16 @@ const Arts = {
     }
   },
 
+  async postReview(id, data) {
+    try {
+      const response = await axios.post(API_ENDPOINT.CREATE_REVIEW(id), data);
+      return response.data;
+    } catch (error) {
+      console.error('Error creating review:', error);
+      throw error;
+    }
+  },
+
   async search(query) {
     try {
       const response = await axios.get(API_ENDPOINT.ARTS_SEARCH(query));
