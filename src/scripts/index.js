@@ -6,15 +6,10 @@ import './components/index';
 
 // Import javascript file as needed
 import './views/pages/menu/main';
+import renderDetailArtPage from './views/pages/menu/detailgaleriseni';
 
 /* eslint-disable */
 import * as bootstrap from 'bootstrap';
-
-const routes = {
-  // '/': Home,
-};
-
-const detectRoute = () => routes[window.location.pathname];
 
 const initPages = () => {
   const header = document.querySelector('header');
@@ -29,6 +24,9 @@ const initPages = () => {
 window.addEventListener('DOMContentLoaded', async () => {
   initPages();
 
-  const route = detectRoute();
-  route.init();
+  // untuk halaman detail galeri seni
+  const url = window.location.href;
+  if (url.includes('detail-galeri-seni')) {
+    await renderDetailArtPage();
+  }
 });

@@ -4,7 +4,6 @@ import { createArtTemplate } from '../../templates/template-creator';
 async function galeriSeni() {
   const arts = await Arts.getAll();
   const arrayArts = Object.values(arts); // Mengonversi nilai-nilai properti objek arts menjadi array
-  console.log(arrayArts);
 
   const artsContainer = document.getElementById('list-arts');
 
@@ -56,9 +55,8 @@ async function galeriSeni() {
   const searchButton = document.getElementById('search-button');
   searchButton.addEventListener('click', () => {
     const textInput = document.getElementById('input-name-art').value;
-    console.log(textInput);
     const artsSearched = arrayArts.filter((art) => art.name.toLowerCase().includes(textInput.toLowerCase()));
-    console.log(artsSearched);
+
     artsContainer.innerHTML = '';
     if (artsSearched.length >= 1) {
       artsSearched.forEach((art) => {
