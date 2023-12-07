@@ -1,15 +1,23 @@
-// function mendaftar() {
-//   window.location.href = 'register.html';
-// }
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
-// function masuk() {
-//   window.location.href = 'index.html';
-// }
+const loginPageFunction = () => {
+  const auth = getAuth();
+  const email = document.getElementById('email-login').value;
+  const password = document.getElementById('password-login').value;
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const mendaftarLink = document.getElementById('mendaftarLink');
-//   const masukButton = document.getElementById('masukButton');
+  const loginButton = document.getElementById('masukButton');
+  loginButton.addEventListener('click', () => {
+    // fungsi sign in
+    signInWithEmailAndPassword(auth, email, password)
+      // eslint-disable-next-line no-unused-vars
+      .then((userCredential) => {
+        alert('Login berhasil! Anda akan diarahkan ke halaman utama.');
+        window.location.href = '/';
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  });
+};
 
-//   mendaftarLink.addEventListener('click', mendaftar);
-//   masukButton.addEventListener('click', masuk);
-// });
+export default loginPageFunction;
