@@ -3,6 +3,9 @@ import newslist from './newslist';
 import galeriSeni from './galeriseni';
 
 // Call functions
-eventlist();
-newslist();
 galeriSeni();
+
+document.addEventListener('DOMContentLoaded', () => {
+  eventlist();
+  newslist();
+});
