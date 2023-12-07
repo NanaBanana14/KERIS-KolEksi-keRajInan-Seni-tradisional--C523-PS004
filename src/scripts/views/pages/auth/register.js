@@ -1,12 +1,22 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   const masukLink = document.getElementById('masukLink');
-//   const daftarButton = document.getElementById('daftarButton');
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
-//   masukLink.addEventListener('click', () => {
-//     window.location.href = 'login.html';
-//   });
+const registPageFunction = () => {
+  const registButton = document.getElementById('daftarButton');
+  registButton.addEventListener('click', () => {
+    const email = document.getElementById('email-regist').value;
+    const password = document.getElementById('password-regist').value;
+    const auth = getAuth();
 
-//   daftarButton.addEventListener('click', () => {
-//     window.location.href = 'index.html';
-//   });
-// });
+    createUserWithEmailAndPassword(auth, email, password)
+      // eslint-disable-next-line no-unused-vars
+      .then((userCredential) => {
+        alert(`Email ${email} berhasil diregistrasi! Anda akan langsung Login ke aplikasi.`);
+        window.location.href = '/';
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  });
+};
+
+export default registPageFunction;
