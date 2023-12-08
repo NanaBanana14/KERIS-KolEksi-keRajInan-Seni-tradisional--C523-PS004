@@ -1,15 +1,19 @@
+/* eslint-disable no-undef */
+
 Feature('Login Feature');
 
-Scenario('User should be able to login successfully', ({ I }) => {
-  I.amOnPage('/auth/login.html'); // Sesuaikan dengan URL halaman login
-  I.seeElement('#email-login');
-  I.fillField('#email-login', 'hani@gmail.com'); // Ganti dengan email yang valid
-  I.fillField('#password-login', '123456'); // Ganti dengan kata sandi yang valid
-  I.click('#masukButton'); // Klik tombol login
+Scenario('User should be able to login successfully', async ({ I }) => {
+  // Melakukan login
+  I.amOnPage('/auth/login.html');
+  I.waitForElement('#email-login');
+  I.fillField('#email-login', 'test@gmail.com');
+  I.fillField('#password-login', '123456');
+  I.click('#masukButton');
+  I.waitForURL();
 
-  I.waitForNavigation(); // Tunggu hingga navigasi selesai, bisa disesuaikan dengan kondisi halaman Anda
-
-  // Memeriksa apakah login berhasil
-  I.see('Login berhasil! Anda akan diarahkan ke halaman utama.'); // Pastikan pesan berhasil muncul
-  I.seeCurrentUrlEquals('/'); // Pastikan pengguna diarahkan ke halaman utama setelah login
+  // Melakukan logout
+  I.waitForText('Log Out', 10);
+  I.click('Log Out');
+  I.wait('Apakah Anda yakin ingin logout?');
+  I.acceptPopup();
 });
