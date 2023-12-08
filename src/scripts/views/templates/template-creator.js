@@ -17,7 +17,7 @@ const createArtTemplate = (art) => `
 `;
 
 const createEventTemplate = (event) => `
-  <div class="card mb-3 col-md-4 position-relative p-0" id="event-${event.id}" style="width: 21rem">
+  <div class="event-item card mb-3 col-md-4 position-relative p-0" id="event-${event.id}" style="width: 21rem">
     <img src="${event['image-url']}" class="card-img-top" alt="${event['name']}">
     <div class="card-body">
       <h5 class="card-title mb-5">${event['name']}</h5>
@@ -45,7 +45,7 @@ const createEventDetailTemplate = (eventDetail) => `
 `;
 
 const createNewsTemplate = (news) => `
-  <div class="card mb-3 col-md-4 position-relative p-0" style="width: 21rem">
+  <div class="news-item card mb-3 col-md-4 position-relative p-0" style="width: 21rem">
     <img src="${news['image-url']}" class="card-img-top" alt="${news['title']}">
     <div class="card-body">
       <h5 class="card-title mb-5">${news['title']}</h5>
@@ -55,9 +55,4 @@ const createNewsTemplate = (news) => `
   </div>
 `;
 
-export { 
-  createArtTemplate, 
-  createEventTemplate, 
-  createEventDetailTemplate, 
-  createNewsTemplate 
-};
+export { createArtTemplate, createEventTemplate, createEventDetailTemplate, createNewsTemplate };

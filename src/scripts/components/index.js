@@ -14,8 +14,6 @@ import './home-page/ExploreSection';
 
 import './FooterApp';
 
-import './form/InputWithValidation';
-
 // inisialisasi komponen bootstrap
 const carousels = document.querySelectorAll('.carousel'); // Temukan semua elemen dengan kelas .carousel
 carousels.forEach((carouselElement) => {
