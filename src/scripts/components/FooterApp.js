@@ -42,7 +42,8 @@ class FooterApp extends LitWithoutShadowDom {
           <div class="col mb-3">
             <h5 class="text-white"> ${msg('Informasi')}</h5>
             <ul class="nav flex-column mt-3">
-              <li class="nav-item mb-2"><a href="/#about-us" class="nav-link p-0 text-white">Tentang Kami</a></li>
+              <li class="nav-item mb-2"><a href="/#about-us" class="nav-link p-0 text-white">${msg('Tentang Kami')}</a></li>
+              <li class="nav-item mb-2"><a href="/menu/pusat-bantuan.html" class="nav-link p-0 text-white">${msg('Pusat Bantuan')}</a></li>
             </ul>
           </div>
 

@@ -19,31 +19,8 @@
       </div>
       <div class="container mt-5 p-0">
         <div class="column">
-          <div class="col-md-12 p-5 position-relative shadow rounded mt-5 mb-5">
-            <div class="py-2">
-              <h2>Event__________</h2>
-              <div class="row mx-auto" id="event-list-container">
-                <!-- content for the "Event" section goes here -->
-              </div>
-            </div>
-            <div class="position-absolute bottom-0 end-0 mb-3 mx-3">
-              <a href="#" id="btnSelanjutnya" class="btn btn-brown-white flex-end">Selanjutnya.. <i class="bi bi-arrow-right-circle-fill"></i></a>
-            </div>
-          </div>
-          <div id="event-detail-container">
-            <!-- content for the "Event Detail" section goes here -->
-          </div>
-          <div class="col-md-12 p-5 position-relative shadow rounded mt-5 mb-5">
-            <div class="py-2">
-              <h2 class="">News__________</h2>
-              <div class="row mx-auto" id="news-list-container">
-                <!-- content for the "News" section goes here -->
-              </div>
-            </div>
-            <div class="position-absolute bottom-0 end-0 mb-3 mx-3">
-              <a href="#" id="btnNewsSelanjutnya" class="btn btn-brown-white flex-end">Selanjutnya.. <i class="bi bi-arrow-right-circle-fill"></i></a>
-            </div>            
-          </div>
+          <event-section></event-section>
+          <news-section></news-section>
         </div>
       </div>
     </main>
@@ -52,20 +29,6 @@
       <footer-app></footer-app>
     </footer>
     <!-- Event Detail Modal -->
-    <div class="modal fade" id="eventDetailModal" tabindex="-1" role="dialog" aria-labelledby="eventDetailModalLabel" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.5)">
-      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="eventDetailModalLabel">Event Detail</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span aria-hidden="true" class="bi bi-x-square-fill"></span>
-            </button>
-          </div>
-          <div class="modal-body" id="eventDetailContainer">
-            <!-- Detail event -->
-          </div>
-        </div>
-      </div>
-    </div>
+    <modal-detail-event></modal-detail-event>
   </body>
 </html>

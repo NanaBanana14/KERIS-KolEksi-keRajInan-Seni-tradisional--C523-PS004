@@ -114,6 +114,30 @@
   <source>Halaman</source>
   <target>Pages</target>
 </trans-unit>
+<trans-unit id="s67d3139cf5042a09">
+  <source>Kategori</source>
+  <target>Category</target>
+</trans-unit>
+<trans-unit id="s5fc9dd96b473de42">
+  <source>Semua</source>
+  <target>All</target>
+</trans-unit>
+<trans-unit id="s944bdeff3b28b11a">
+  <source>Alat Musik</source>
+  <target>musical instruments</target>
+</trans-unit>
+<trans-unit id="s7985a9bee2ce92bf">
+  <source>Sastra</source>
+  <target>literature</target>
+</trans-unit>
+<trans-unit id="sefff6ddc42e035d6">
+  <source>Seni Rupa</source>
+  <target>visual arts</target>
+</trans-unit>
+<trans-unit id="sd387bc0bfd33aef5">
+  <source>Selanjutnya..</source>
+  <target>Next</target>
+</trans-unit>
 </body>
 </file>
 </xliff>
