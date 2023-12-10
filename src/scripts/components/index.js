@@ -5,6 +5,8 @@ import './DropDownBtn';
 import './CustomCarousel';
 import './CustomCarouselGaleri';
 import './ModalEvent';
+
+// Home Page Custom
 import './home-page/DeveloperCard';
 import './home-page/About-Us';
 import './home-page/HeroApp';
@@ -12,9 +14,12 @@ import './home-page/ExploreCard';
 import './home-page/KerisDesc';
 import './home-page/ExploreSection';
 
-import './FooterApp';
+// Kalendar Budaya Page Custom
+import './kalendar-budaya-page/HeaderKabud';
+import './kalendar-budaya-page/CardCalendar';
+import './kalendar-budaya-page/MainContentKabud';
 
-import './form/InputWithValidation';
+import './FooterApp';
 
 // inisialisasi komponen bootstrap
 const carousels = document.querySelectorAll('.carousel'); // Temukan semua elemen dengan kelas .carousel

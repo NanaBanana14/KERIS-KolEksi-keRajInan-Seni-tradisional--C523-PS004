@@ -1,8 +1,19 @@
+/* eslint-disable */
 import { html } from 'lit';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
 import developersData from '../../../public/data/developer-data';
+// import 'aos/dist/aos.css';
+// import AOS from 'aos';
 
 class DeveloperCard extends LitWithoutShadowDom {
+  // constructor() {
+  //   super();
+  //   this.addEventListener('firstUpdated', () => {
+  //     AOS.init();
+  //     AOS.refresh();
+  //   });
+  // }
+
   render() {
     return html`
     <div class="container mb-4 d-flex flex-wrap gap-4 justify-content-center mx-auto">

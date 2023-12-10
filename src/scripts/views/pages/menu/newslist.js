@@ -8,6 +8,18 @@ async function newslist() {
     const newsListContainer = document.getElementById('news-list-container');
     const btnNewsSelanjutnya = document.getElementById('btnNewsSelanjutnya');
 
+    // Sort news by the latest date
+    news.sort((a, b) => {
+      const dateA = new Date(a['publish-date']);
+      const dateB = new Date(b['publish-date']);
+
+      // Check if the dates are valid
+      if (!isNaN(dateA) && !isNaN(dateB)) {
+        return dateB - dateA;
+      }
+      return b['publish-date'].localeCompare(a['publish-date']);
+    });
+
     // Hide all news cards except the first three
     news.forEach((newsItem, index) => {
       const newsCard = createNewsTemplate(newsItem);

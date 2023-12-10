@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image" href="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Ficon-keris.png?alt=media&token=052e6e5b-87c2-4158-9d44-e4ca9921e0cf" />
+    <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
   </head>
   <body>
     <header>
@@ -14,10 +16,10 @@
       <!-- Corousal -->
       <div class="bg-brown py-5 p-5 mt-5">
         <div class="row">
-          <div class="col-md-6 d-flex align-items-center">
-            <h1 class="text-white text-center">Temukan Event dan Berita Seputar Seni Disini</h1>
+          <div class="col-md-6 d-flex align-items-center order-2 order-md-first">
+            <h1 class="text-white text-center mt-5">Temukan Event dan Berita Seputar Seni Disini</h1>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-md-last">
             <custom-carousel-galeri></custom-carousel-galeri>
           </div>
         </div>
