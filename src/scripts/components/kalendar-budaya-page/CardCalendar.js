@@ -1,7 +1,13 @@
 import { html } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
 
 class CardCalendar extends LitWithoutShadowDom {
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
+
   render() {
     return html`
         <div class="shadow mt-5 p-3 mb-5 bg-body rounded position-relative">
@@ -11,8 +17,8 @@ class CardCalendar extends LitWithoutShadowDom {
                     <div class="p-2">
                         <div class="d-flex flex-column shadow">
                         <div class="p-2">
-                            <h3 class="text-center p-3 mb-2 bg-brown text-white rounded">Kalendar Budaya</h3>
-                            <p class="text-center text-wrap mt-5">Untuk mengetahui jadwal detail dari event, kamu dapat klik salah satu eventnya.</p>
+                            <h3 class="text-center p-3 mb-2 bg-brown text-white rounded">${msg('Kalendar Budaya')}</h3>
+                            <p class="text-center text-wrap mt-5">${msg('Untuk mengetahui jadwal detail dari event, kamu dapat klik salah satu eventnya.')}</p>
                         </div>
                         <div class="p-2">
                             <img class="w-100" src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fassets%20kalendar%2FDate%20picker-bro.png?alt=media&token=4843d750-427c-4e94-bdb3-1fb1ed4916b6" alt="Calendar" />

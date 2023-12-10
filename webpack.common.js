@@ -86,6 +86,13 @@ module.exports = {
       ...htmlWebpackPluginConfig,
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Pusat Bantuan',
+      filename: 'menu/pusat-bantuan.html',
+      template: path.resolve(__dirname, 'src/views/menu/pusat-bantuan.html'),
+      ...htmlWebpackPluginConfig,
+    }),
+
     // autentication
 
     new HtmlWebpackPlugin({

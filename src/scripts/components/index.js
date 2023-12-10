@@ -4,7 +4,8 @@ import './NavLink';
 import './DropDownBtn';
 import './CustomCarousel';
 import './CustomCarouselGaleri';
-import './ModalEvent';
+
+import './form/LocalePicker';
 
 // Home Page Custom
 import './home-page/DeveloperCard';
@@ -13,6 +14,12 @@ import './home-page/HeroApp';
 import './home-page/ExploreCard';
 import './home-page/KerisDesc';
 import './home-page/ExploreSection';
+
+// Galeri Seni
+import './galeri-seni-page/HeroCarouselGaleri';
+
+// News
+import './news-page/HeroCarouselNews';
 
 // Kalendar Budaya Page Custom
 import './kalendar-budaya-page/HeaderKabud';

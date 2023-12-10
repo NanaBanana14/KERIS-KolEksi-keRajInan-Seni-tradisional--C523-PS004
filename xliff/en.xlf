@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="en" source-language="id" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="sce43d420b27c5f7a">
+  <source>Beranda</source>
+  <target>Home</target>
+</trans-unit>
+<trans-unit id="sbc48bdf8ea977bca">
+  <source>Tentang Kami</source>
+  <target>About Us</target>
+</trans-unit>
+<trans-unit id="s45dab30b4d2d3c14">
+  <source>Masuk</source>
+  <target>Login</target>
+</trans-unit>
+<trans-unit id="s229fb4df9ecf3ed1">
+  <source>Keluar</source>
+  <target>Logout</target>
+</trans-unit>
+<trans-unit id="s6d8c02aee480af7a">
+  <source>Menu</source>
+  <target>Menu</target>
+</trans-unit>
+<trans-unit id="s6a1b2e26f33980cc">
+  <source>Galeri Seni</source>
+  <target>Art Gallery</target>
+</trans-unit>
+<trans-unit id="s0fd75cc6a1aad906">
+  <source>News</source>
+  <target>News</target>
+</trans-unit>
+<trans-unit id="sc6d5be63b66e5f21">
+  <source>Kalendar Budaya</source>
+  <target>Cultural Calendar</target>
+</trans-unit>
+<trans-unit id="s2ee887457c385fbf">
+  <source>Pusat Bantuan</source>
+  <target>Help Center</target>
+</trans-unit>
+<trans-unit id="sa74e83502f7f48ed">
+  <source>Mari mengenal lebih jauh dengan para developer KERIS !</source>
+  <target>Get to know more about KERIS developers!</target>
+</trans-unit>
+<trans-unit id="sece5db4f4a9ca418">
+  <source>Ketuk Salah satu social medianya untuk mengetahui lebih lanjut</source>
+  <target>Tap one of their social media to find out more</target>
+</trans-unit>
+<trans-unit id="s664a5ea288661c08">
+  <source>Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</source>
+  <target>Explore Traditional Indonesian Art Gallery with KERIS!</target>
+</trans-unit>
+<trans-unit id="sbb54c807c3c27f13">
+  <source>Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi?</source>
+  <target>Discover the boundless beauty of various traditional Indonesian arts and experience the unique stories behind each piece waiting for you to uncover. What are you waiting for?</target>
+</trans-unit>
+<trans-unit id="s6317efa6799d824b">
+  <source>Mulai</source>
+  <target>Start</target>
+</trans-unit>
+<trans-unit id="sa0263c8adcf4f2ee">
+  <source>Fitur yang dapat digunakan oleh Seniman untuk pamerkan karya &amp; sumber info bagi penggemar.</source>
+  <target>Features that can be used by artists to showcase their work and a source of information for fans.</target>
+</trans-unit>
+<trans-unit id="s55b011e25d827cdf">
+  <source>Fitur yang digunakan untuk mengakses informasi jadwal acara seni yang akan dilaksanakan.</source>
+  <target>Features used to access information about upcoming art events.</target>
+</trans-unit>
+<trans-unit id="s7a5b47ff42a8ced4">
+  <source>Fitur yang menyajikan informasi berita dan event terkini seputar karya seni.</source>
+  <target>Features that provide the latest news and events about art.</target>
+</trans-unit>
+<trans-unit id="s48694edac824ab98">
+  <source>Apa Itu KERIS ?</source>
+  <target>What Is KERIS ?</target>
+</trans-unit>
+<trans-unit id="sf989d44a1117a5eb">
+  <source>KERIS adalah platform yang mempromosikan dan melestarikan seni dan budaya tradisional Indonesia. Diciptakan sebagai solusi untuk tantangan seniman dan penggemar seni tradisional, KERIS menyediakan fitur seperti "GaleriSeni," "DetailSeni," dan "ReviewKarya" untuk memamerkan karya, memberikan informasi rinci, dan menerima umpan balik. Fitur "News" dan "KalenderBudaya" bertujuan meningkatkan pengetahuan tentang seni tradisional. Bergabunglah dengan KERIS untuk menjaga dan menghargai kekayaan budaya Indonesia melalui KolEksi keRajInan Seni tradisional.</source>
+  <target>KERIS is a platform that promotes and preserves traditional Indonesian art and culture. Created as a solution to the challenges faced by artists and fans of traditional art, KERIS provides features such as "Art Gallery," "Art Details," and "Art Reviews" to showcase works, provide detailed information, and receive feedback. The "News" and "Cultural Calendar" features aim to enhance knowledge about traditional art. Join KERIS to preserve and appreciate the cultural richness of Indonesia through a Collection of Diligent Traditional Art.</target>
+</trans-unit>
+<trans-unit id="s79f8ae517cee57d3">
+  <source>Apa Yang Bisa Kamu Temukan Disini ?</source>
+  <target>What Can You Find Here?</target>
+</trans-unit>
+<trans-unit id="sef10cc642e368663">
+  <source>Eksplorasi beragam karya seni yang telah diciptakan oleh pengrajin seni dari berbagai wilayah di Indonesia melalui platform ini.</source>
+  <target>Explore various artworks created by artisans from different regions in Indonesia through this platform.</target>
+</trans-unit>
+<trans-unit id="s413a05010a9a0083">
+  <source>Temukan Berbagai Macam Seni Tradisional Disini</source>
+  <target>Discover Various Traditional Arts Here</target>
+</trans-unit>
+<trans-unit id="sc7cc74c6aef16867">
+  <source>Temukan Event dan Berita Seputar Seni Disini</source>
+  <target>Discover Events and News About Art Here</target>
+</trans-unit>
+<trans-unit id="s6dea764058d14dcb">
+  <source>Temukan jadwal event-event seni yang diselenggarakan melalui daftar jadwal event pada kalendar ! Nikmati kemudahan dalam akses mudah informasinya.</source>
+  <target>Find the schedules of art events through the event schedule list on the calendar! Enjoy the convenience of easy access to information.</target>
+</trans-unit>
+<trans-unit id="sf92ee429a81b52ca">
+  <source>Untuk mengetahui jadwal detail dari event, kamu dapat klik salah satu eventnya.</source>
+  <target>To find detailed schedules for events, you can click on any of the events.</target>
+</trans-unit>
+<trans-unit id="s2d0bfa3179b270b7">
+  <source>Ikuti Kami</source>
+  <target>Follow Us</target>
+</trans-unit>
+<trans-unit id="sb3f32662a9054673">
+  <source>Informasi</source>
+  <target>Information</target>
+</trans-unit>
+<trans-unit id="sc1d4569c564a6373">
+  <source>Halaman</source>
+  <target>Pages</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

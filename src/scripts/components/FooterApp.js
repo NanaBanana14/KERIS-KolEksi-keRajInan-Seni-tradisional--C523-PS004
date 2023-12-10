@@ -1,7 +1,13 @@
 import { html } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from './base/LitWithoutShadowDom';
 
 class FooterApp extends LitWithoutShadowDom {
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
+
   render() {
     return html`
       <div class="container py-5">
@@ -19,7 +25,7 @@ class FooterApp extends LitWithoutShadowDom {
           <div class="col mb-3"></div>
 
           <div class="col mb-3">
-            <h5 class="text-white">Ikuti Kami</h5>
+            <h5 class="text-white">${msg('Ikuti Kami')}</h5>
             <ul class="nav flex-row gap-3 mt-3">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-white"><i class="bi bi-instagram"></i></a>
@@ -34,19 +40,19 @@ class FooterApp extends LitWithoutShadowDom {
           </div>
 
           <div class="col mb-3">
-            <h5 class="text-white">Information</h5>
+            <h5 class="text-white"> ${msg('Informasi')}</h5>
             <ul class="nav flex-column mt-3">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tentang Kami</a></li>
+              <li class="nav-item mb-2"><a href="/#about-us" class="nav-link p-0 text-white">Tentang Kami</a></li>
             </ul>
           </div>
 
           <div class="col mb-3">
-            <h5 class="text-white">Halaman</h5>
+            <h5 class="text-white"> ${msg('Halaman')}</h5>
             <ul class="nav flex-column mt-3">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Galeri Seni</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">News</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Kalender Seni</a></li>
+              <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-white"> ${msg('Beranda')}</a></li>
+              <li class="nav-item mb-2"><a href="/menu/galeri-seni.html" class="nav-link p-0 text-white"> ${msg('Galeri Seni')}</a></li>
+              <li class="nav-item mb-2"><a href="/menu/news.html" class="nav-link p-0 text-white"> ${msg('News')}</a></li>
+              <li class="nav-item mb-2"><a href="/menu/kalendarbudaya.html" class="nav-link p-0 text-white"> ${msg('Kalendar Budaya')}</a></li>
             </ul>
           </div>
         </div>
