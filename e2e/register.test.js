@@ -1,13 +1,11 @@
+/* eslint-disable no-undef */
+
 Feature('Registration Feature');
 
-Scenario('User should be able to register successfully', ({ I }) => {
-  I.amOnPage('http://172.20.10.2:9000/auth/register.html');
-
-  const email = 'tes.@gmail.com';
-  const password = '123456';
-
-  I.fillField('#email-regist', email);
-  I.fillField('#password-regist', password);
+Scenario('User should be able to register successfully', async ({ I }) => {
+  I.amOnPage('/auth/register.html');
+  I.fillField('#email-regist', 'test@gmail.com');
+  I.fillField('#password-regist', '123456');
   I.click('#daftarButton');
-  
+  I.wait('email-already-in-use');
 });
