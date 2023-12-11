@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image" href="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Ficon-keris.png?alt=media&token=052e6e5b-87c2-4158-9d44-e4ca9921e0cf" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="manifest" href="./app.webmanifest">
+    <meta name="theme-color" content="#61422e"/>
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
   </head>
   <body>
@@ -14,41 +17,10 @@
 
     <main style="margin-top: 55px">
       <!-- Corousal -->
-      <div class="bg-brown py-5 p-5 mt-5">
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-center order-2 order-md-first">
-            <h1 class="text-white text-center mt-5">Temukan Event dan Berita Seputar Seni Disini</h1>
-          </div>
-          <div class="col-md-6 order-1 order-md-last">
-            <custom-carousel-galeri></custom-carousel-galeri>
-          </div>
-        </div>
-      </div>
+      <hero-galeri-seni></hero-galeri-seni>
 
       <!-- Art Navigasi -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-          <!-- Bagian Kiri Arts Navigasi -->
-          <div class="navbar-nav">
-            <div class="dropdown">
-              <button id="category-button" class="btn btn-brown-darkbrown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori</button>
-              <ul class="dropdown-menu">
-                <li><a id="dropdown-semua" class="dropdown-item">Semua</a></li>
-                <li><a id="dropdown-alat-musik" class="dropdown-item">Alat Musik</a></li>
-                <li><a id="dropdown-sastra" class="dropdown-item">Sastra</a></li>
-                <li><a id="dropdown-seni-rupa" class="dropdown-item">Seni Rupa</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- Bagian Kanan Art Navigasi -->
-          <div class="navbar-nav ml-auto">
-            <form class="d-flex gap-2" role="search">
-              <input id="input-name-art" class="form-control" type="search" placeholder="Search" aria-label="Search" />
-              <button id="search-button" type="button" class="btn btn-white-brown"><i class="bi bi-search"></i></button>
-            </form>
-          </div>
-        </div>
-      </nav>
+      <arts-navigasi></arts-navigasi>
 
       <!-- Item Arts -->
       <div id="list-arts" class="d-flex flex-wrap justify-content-center p-4 gap-4"></div>

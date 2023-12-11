@@ -1,16 +1,12 @@
 import { html } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
-// import 'aos/dist/aos.css';
-// import AOS from 'aos';
 
 class HeroApp extends LitWithoutShadowDom {
-  // constructor() {
-  //   super();
-  //   this.addEventListener('firstUpdated', () => {
-  //     AOS.init();
-  //     AOS.refresh();
-  //   });
-  // }
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   render() {
     return html`
@@ -28,11 +24,11 @@ class HeroApp extends LitWithoutShadowDom {
           <!--text-->
           <div class="col-md-7 d-flex flex-column align-items-start justify-content-center order-md-first">
             <div class="text">
-              <h1 class="fw-bolder">Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !</h1>
-              <p class="paragraf-size-custom mt-3">Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi?</p>
+              <h1 class="fw-bolder">${msg('Jelajahi Galeri Seni Tradisional Indonesia Bersama KERIS !')}</h1>
+              <p class="paragraf-size-custom mt-3">${msg('Temukan keindahan tak terbatas dari berbagai seni tradisional Indonesia dan rasakan cerita unik dari setiap karya yang menunggu untuk kamu ketahui. Tunggu apa lagi?')}</p>
             </div>
             <div class="buttons">
-              <button onclick="window.location.href='#all-about-here'" class="btn btn-brown-darkbrown" style="width: 100px;">Mulai</button>
+              <button onclick="window.location.href='#all-about-here'" class="btn btn-brown-darkbrown" style="width: 100px;">${msg('Mulai')}</button>
             </div>                  
           </div>
         </div>

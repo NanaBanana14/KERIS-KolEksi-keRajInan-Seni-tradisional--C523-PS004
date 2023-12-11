@@ -1,7 +1,13 @@
 import { html } from 'lit';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
 
 class KerisDesc extends LitWithoutShadowDom {
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
+
   render() {
     return html`
     <div class="hero">
@@ -13,15 +19,8 @@ class KerisDesc extends LitWithoutShadowDom {
         <!--img-->
         <div class="col-md-6 text-md-start">
             <div class="text">
-            <h2>Apa Itu KERIS ?</h2>
-            <p class="paragraf-size-custom mt-4">
-              KERIS adalah platform yang mempromosikan dan melestarikan seni dan budaya tradisional Indonesia. 
-              Diciptakan sebagai solusi untuk tantangan seniman dan penggemar seni tradisional, KERIS menyediakan 
-              fitur seperti "GaleriSeni," "DetailSeni," dan "ReviewKarya" untuk memamerkan karya, memberikan informasi 
-              rinci, dan menerima umpan balik. Fitur "News" dan "KalenderBudaya" bertujuan meningkatkan 
-              pengetahuan tentang seni tradisional. 
-              Bergabunglah dengan KERIS untuk menjaga dan menghargai kekayaan budaya Indonesia melalui KolEksi 
-              keRajInan Seni tradisional.
+            <h2>${msg('Apa Itu KERIS ?')}</h2>
+            <p class="paragraf-size-custom mt-4">${msg('KERIS adalah platform yang mempromosikan dan melestarikan seni dan budaya tradisional Indonesia. Diciptakan sebagai solusi untuk tantangan seniman dan penggemar seni tradisional, KERIS menyediakan fitur seperti "GaleriSeni," "DetailSeni," dan "ReviewKarya" untuk memamerkan karya, memberikan informasi rinci, dan menerima umpan balik. Fitur "News" dan "KalenderBudaya" bertujuan meningkatkan pengetahuan tentang seni tradisional. Bergabunglah dengan KERIS untuk menjaga dan menghargai kekayaan budaya Indonesia melalui KolEksi keRajInan Seni tradisional.')}
             </p>
             </div>
         </div>
