@@ -58,9 +58,4 @@ const createNewsTemplate = (news) => `
   </div>
 `;
 
-export { 
-  createArtTemplate, 
-  createEventTemplate, 
-  createEventDetailTemplate, 
-  createNewsTemplate 
-};
+export { createArtTemplate, createEventTemplate, createEventDetailTemplate, createNewsTemplate };
