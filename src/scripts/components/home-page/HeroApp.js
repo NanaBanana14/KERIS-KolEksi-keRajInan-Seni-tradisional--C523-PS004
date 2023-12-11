@@ -1,7 +1,17 @@
 import { html } from 'lit';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
+// import 'aos/dist/aos.css';
+// import AOS from 'aos';
 
 class HeroApp extends LitWithoutShadowDom {
+  // constructor() {
+  //   super();
+  //   this.addEventListener('firstUpdated', () => {
+  //     AOS.init();
+  //     AOS.refresh();
+  //   });
+  // }
+
   render() {
     return html`
     <div class="container py-5">

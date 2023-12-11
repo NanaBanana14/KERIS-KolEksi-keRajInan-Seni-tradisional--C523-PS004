@@ -5,12 +5,19 @@ import './DropDownBtn';
 import './CustomCarousel';
 import './CustomCarouselGaleri';
 import './ModalEvent';
+
+// Home Page Custom
 import './home-page/DeveloperCard';
 import './home-page/About-Us';
 import './home-page/HeroApp';
 import './home-page/ExploreCard';
 import './home-page/KerisDesc';
 import './home-page/ExploreSection';
+
+// Kalendar Budaya Page Custom
+import './kalendar-budaya-page/HeaderKabud';
+import './kalendar-budaya-page/CardCalendar';
+import './kalendar-budaya-page/MainContentKabud';
 
 import './FooterApp';
 

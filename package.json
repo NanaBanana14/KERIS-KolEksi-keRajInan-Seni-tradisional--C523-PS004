@@ -17,6 +17,9 @@
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
+    "@lit/localize-tools": "^0.7.1",
+    "@testing-library/dom": "^9.3.3",
+    "@testing-library/jest-dom": "^6.1.5",
     "autoprefixer": "10.4.13",
     "babel-jest": "^29.7.0",
     "babel-loader": "9.1.0",
@@ -29,6 +32,10 @@
     "eslint-plugin-import": "^2.29.0",
     "html-webpack-plugin": "5.5.0",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "jest-mock": "^29.7.0",
+    "jsdom": "^23.0.1",
     "playwright": "^1.40.1",
     "postcss-loader": "7.0.1",
     "sass": "1.56.1",
@@ -40,6 +47,7 @@
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
+    "@lit/localize": "^0.12.1",
     "@popperjs/core": "2.11.6",
     "axios": "^1.6.2",
     "bootstrap": "5.2.2",

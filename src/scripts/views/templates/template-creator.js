@@ -17,11 +17,14 @@ const createArtTemplate = (art) => `
 `;
 
 const createEventTemplate = (event) => `
-  <div class="event-item card mb-3 col-md-4 position-relative p-0" id="event-${event.id}" style="width: 21rem">
-    <img src="${event['image-url']}" class="card-img-top" alt="${event['name']}">
+  <div class="card mb-3 col-md-4 position-relative p-0" id="event-${event.id}">
+    <div class="position-relative">
+      <img src="${event['image-url']}" class="card-img-top" alt="${event['name']}" style="height: 200px; object-fit: cover">
+      <p class="card-text text-white p-2 rounded bg-brown position-absolute bottom-0 start-0 bi bi-calendar-event"> ${event['date']}</p>
+    </div>
     <div class="card-body">
       <h5 class="card-title mb-5">${event['name']}</h5>
-      <p class="card-text position-absolute bottom-0 start-0 mb-3 mx-3 bi bi-calendar-event"> ${event['date']}</p>
+      <p class="card-text text-white p-2 rounded bg-brown position-absolute top-0 end-0"> ${event['status']}</p>
       <a href="#" class="btn btn-brown-white btn-event-detail position-absolute bottom-0 end-0 mb-3 mx-3" data-toggle="modal" data-detail-url=" ${event['detail-url']}">Read more <i class="bi bi-arrow-right-circle-fill"></i></a>
     </div>
   </div>
@@ -45,8 +48,8 @@ const createEventDetailTemplate = (eventDetail) => `
 `;
 
 const createNewsTemplate = (news) => `
-  <div class="news-item card mb-3 col-md-4 position-relative p-0" style="width: 21rem">
-    <img src="${news['image-url']}" class="card-img-top" alt="${news['title']}">
+  <div class="card mb-3 col-md-4 position-relative p-0">
+    <img src="${news['image-url']}" class="card-img-top" alt="${news['title']}" style="height: 200px; object-fit: cover">
     <div class="card-body">
       <h5 class="card-title mb-5">${news['title']}</h5>
       <p class="card-text position-absolute bottom-0 start-0 mb-3 mx-3"><i class="bi bi-calendar-event"></i> ${news['publish-date']}</p>

@@ -9,7 +9,7 @@ function handleEventClick(event) {
   if (detailUrl) {
     showEventDetailByUrl(detailUrl);
   } else {
-    console.error('Error: URL Detail Event tidak terdefinisi.');
+    // console.error('Error: URL Detail Event tidak terdefinisi.');
   }
 }
 
@@ -19,6 +19,16 @@ async function eventlist() {
     const events = Array.isArray(eventsResponse) ? eventsResponse : Object.values(eventsResponse);
     const eventListContainer = document.getElementById('event-list-container');
     const btnSelanjutnya = document.getElementById('btnSelanjutnya');
+
+    // Sort events based on status, with upcoming events first
+    events.sort((a, b) => {
+      if (a.status === 'Upcoming' && b.status !== 'Upcoming') {
+        return -1; // a comes first
+      } if (b.status === 'Upcoming' && a.status !== 'Upcoming') {
+        return 1; // b comes first
+      } 
+      return 0; // no change in order
+    });
 
     // Hide all cards except the first three
     events.forEach((event, index) => {
@@ -32,7 +42,7 @@ async function eventlist() {
       }
     });
 
-    let currentIndex = 3; // Start with the fourth card
+    let currentIndex = 3;
 
     // Add event listener to "Read More" buttons
     document.querySelectorAll('.btn-event-detail').forEach((button) => {
@@ -41,10 +51,9 @@ async function eventlist() {
 
     // Add event listener to "Selanjutnya" button
     btnSelanjutnya.addEventListener('click', (event) => {
-      event.preventDefault(); // Mencegah perilaku default (gulir ke atas)
+      event.preventDefault();
 
       // Show the next three hidden cards
-      // eslint-disable-next-line no-plusplus
       for (let i = currentIndex; i < currentIndex + 3; i++) {
         const card = eventListContainer.children[i];
         if (card) {
@@ -59,7 +68,7 @@ async function eventlist() {
       }
     });
   } catch (error) {
-    console.error('Error fetching events:', error.message);
+    // console.error('Error fetching events:', error.message);
   }
 }
 
