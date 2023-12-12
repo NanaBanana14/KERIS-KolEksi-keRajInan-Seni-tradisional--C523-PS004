@@ -12,8 +12,8 @@ Scenario('User should be able to login successfully', async ({ I }) => {
   I.waitForURL();
 
   // Melakukan logout
-  I.waitForText('Log Out', 10);
-  I.click('Log Out');
+  I.waitForText('Keluar', 10);
+  I.click('Keluar');
   I.wait('Apakah Anda yakin ingin logout?');
   I.acceptPopup();
 });

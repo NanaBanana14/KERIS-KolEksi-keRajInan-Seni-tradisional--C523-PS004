@@ -88,7 +88,7 @@ const createReview = (review) => `
 `;
 
 const createEventTemplate = (event) => `
-  <div class="card mb-3 col-md-4 position-relative p-0" id="event-${event.id}">
+  <div class="event-item card mb-3 col-md-4 position-relative p-0" id="event-${event.id}">
     <div class="position-relative">
       <img src="${event['image-url']}" class="card-img-top" alt="${event['name']}" style="height: 200px; object-fit: cover">
       <p class="card-text text-white p-2 rounded bg-brown position-absolute bottom-0 start-0 bi bi-calendar-event"> ${event['date']}</p>
@@ -119,7 +119,7 @@ const createEventDetailTemplate = (eventDetail) => `
 `;
 
 const createNewsTemplate = (news) => `
-  <div class="card mb-3 col-md-4 position-relative p-0">
+  <div class="news-item card mb-3 col-md-4 position-relative p-0">
     <img src="${news['image-url']}" class="card-img-top" alt="${news['title']}" style="height: 200px; object-fit: cover">
     <div class="card-body">
       <h5 class="card-title mb-5">${news['title']}</h5>
@@ -129,12 +129,4 @@ const createNewsTemplate = (news) => `
   </div>
 `;
 
-export { 
-  createArtTemplate,
-  createDetailArt, 
-  createSeller,
-  createReview,
-  createEventTemplate, 
-  createEventDetailTemplate, 
-  createNewsTemplate 
-};
+export { createArtTemplate, createDetailArt, createSeller, createReview, createEventTemplate, createEventDetailTemplate, createNewsTemplate };

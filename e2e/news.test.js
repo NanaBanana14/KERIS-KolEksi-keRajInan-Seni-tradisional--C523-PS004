@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 
-Feature('Galeri Seni');
+Feature('News and Event');
 
 Scenario('Display event', async ({ I }) => {
   I.amOnPage('/menu/news.html');
