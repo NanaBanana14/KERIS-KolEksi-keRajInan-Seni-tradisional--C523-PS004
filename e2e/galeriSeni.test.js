@@ -40,3 +40,11 @@ Scenario('Display detail art', async ({ I }) => {
   I.waitForURL();
   I.waitForText('Angklung adalah');
 });
+
+Scenario('Display detail art', async ({ I }) => {
+  I.amOnPage('/menu/detail-galeri-seni.html#art_id_2');
+  I.waitForElement('#button-submit-review');
+  I.click('#button-submit-review');
+  I.wait('Anda harus login untuk mengirim ulasan');
+  I.acceptPopup();
+});

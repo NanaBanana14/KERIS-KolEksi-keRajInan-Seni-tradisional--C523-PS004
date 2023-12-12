@@ -10,14 +10,14 @@ class ArtsNavigasi extends LitWithoutShadowDom {
 
   render() {
     return html`
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <!-- Bagian Kiri Arts Navigasi -->
-            <dropdown-category></dropdown-category>
-            <!-- Bagian Kanan Art Navigasi -->
-            <search-button></search-button>
+          <!-- Bagian Kiri Arts Navigasi -->
+          <dropdown-category></dropdown-category>
+          <!-- Bagian Kanan Art Navigasi -->
+          <search-button></search-button>
         </div>
-    </nav>
+      </nav>
     `;
   }
 }
