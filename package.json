@@ -45,7 +45,8 @@
     "webpack-cli": "5.0.0",
     "webpack-dev-server": "4.11.1",
     "webpack-merge": "5.8.0",
-    "webpack-pwa-manifest": "^4.3.0"
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
     "@lit/localize": "^0.12.1",
@@ -55,6 +56,7 @@
     "bootstrap-icons": "1.10.2",
     "firebase": "^10.6.0",
     "jquery": "^3.7.1",
-    "lit": "^2.8.0"
+    "lit": "^2.8.0",
+    "workbox-window": "^7.0.0"
   }
 }

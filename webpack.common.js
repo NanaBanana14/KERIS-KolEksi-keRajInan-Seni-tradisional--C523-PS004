@@ -1,7 +1,11 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 const htmlWebpackPluginConfig = {
   meta: {
@@ -116,6 +120,26 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src'),
           to: 'public',
+        },
+      ],
+    }),
+
+    new WorkboxWebpackPlugin.GenerateSW({
+      swDest: './sw.bundle.js',
+      runtimeCaching: [
+        {
+          urlPattern: ({ url }) => url.href.startsWith('https://keris-api-default-rtdb.firebaseio.com/'),
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'keris-api',
+          },
+        },
+        {
+          urlPattern: ({ url }) => url.href.startsWith('https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images'),
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'keris-images',
+          },
         },
       ],
     }),
