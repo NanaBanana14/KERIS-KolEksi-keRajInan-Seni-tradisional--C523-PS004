@@ -138,6 +138,194 @@
   <source>Selanjutnya..</source>
   <target>Next</target>
 </trans-unit>
+<trans-unit id="sa66970f92bf8a81b">
+  <source>Perlu Bantuan ?</source>
+  <target>Need Help?</target>
+</trans-unit>
+<trans-unit id="sb77e05ea64042b06">
+  <source>Halaman ini disediakan untuk kamu yang memerlukan bantuan dalam penggunaan website ini, jangan ragu untuk menghubungi kami lebih lanjut bila terdapat keluhan !</source>
+  <target>This page is provided for those who need assistance in using this website, feel free to contact us for further assistance if you have any complaints!</target>
+</trans-unit>
+<trans-unit id="s4c1dd5c54605c58e">
+  <source>Masuk Daftar</source>
+  <target>Login Register</target>
+</trans-unit>
+<trans-unit id="s7780ad31c4b911e2">
+  <source>Melihat Galeri Seni</source>
+  <target>Viewing Art Gallery</target>
+</trans-unit>
+<trans-unit id="se63cd83610348686">
+  <source>Review Galeri Seni</source>
+  <target>Reviewing Art Gallery</target>
+</trans-unit>
+<trans-unit id="s0180d2cc863232c9">
+  <source>Melihat Event dan News</source>
+  <target>Viewing Events and News</target>
+</trans-unit>
+<trans-unit id="s6278aa59a76e657a">
+  <source>Melihat Jadwal Event</source>
+  <target>Viewing Event Schedule</target>
+</trans-unit>
+<trans-unit id="s8e3d6234a1a08bcd">
+  <source>Cara Login</source>
+  <target>Login Procedure</target>
+</trans-unit>
+<trans-unit id="s472a7e66a1070e33">
+  <source>klik Masuk yang berada di pojok kanan atas</source>
+  <target>click Login in the upper right corner</target>
+</trans-unit>
+<trans-unit id="se2a48793020edfe6">
+  <source>Masukkan Email yang telah terdaftar</source>
+  <target>Enter the registered Email</target>
+</trans-unit>
+<trans-unit id="sc618c7a7a5505677">
+  <source>Masukkan Password</source>
+  <target>Enter Password</target>
+</trans-unit>
+<trans-unit id="s377bf73115118369">
+  <source>Klik Masuk</source>
+  <target>Click Login</target>
+</trans-unit>
+<trans-unit id="sa8b1420cb736f4e9">
+  <source>Cara Register</source>
+  <target>Registration Procedure</target>
+</trans-unit>
+<trans-unit id="sfdf88e8f4200fd1c">
+  <source>klik Mendaftar</source>
+  <target>click Register</target>
+</trans-unit>
+<trans-unit id="sbc312562f5e69786">
+  <source>Masukkan Email</source>
+  <target>Enter Email</target>
+</trans-unit>
+<trans-unit id="s5e4ecbd2641da88c">
+  <source>Masukkan password (minimal 6 karakter)</source>
+  <target>Enter password (at least 6 characters)</target>
+</trans-unit>
+<trans-unit id="scb33a7756ac59fdc">
+  <source>Klik Daftar</source>
+  <target>Click Register</target>
+</trans-unit>
+<trans-unit id="s3663485af983de05">
+  <source>klik Menu yang ada di Navbar</source>
+  <target>Click the Menu in the Navbar</target>
+</trans-unit>
+<trans-unit id="sb4bec5796bd97969">
+  <source>Klik Galeri Seni</source>
+  <target>Click Art Gallery</target>
+</trans-unit>
+<trans-unit id="s1ae46fa40d55f839">
+  <source>Untuk Melihat kategori seni</source>
+  <target>To View art categories</target>
+</trans-unit>
+<trans-unit id="s35db311f9fe100e6">
+  <source>Klik dropdown Kategori yang ada dipojok kiri atas</source>
+  <target>Click the category dropdown in the upper left corner</target>
+</trans-unit>
+<trans-unit id="s0239589f90d5aaca">
+  <source>Untuk Melihat informasi lebih banyak</source>
+  <target>To see more information</target>
+</trans-unit>
+<trans-unit id="s9c0f6a07442bde7d">
+  <source>Klik Read more dan akan menampilkan detail galeri</source>
+  <target>Click Read more and it will show gallery details</target>
+</trans-unit>
+<trans-unit id="sa7dd95e2772a861e">
+  <source>Masuk kehalaman detail Galeri Seni</source>
+  <target>Go to the Art Gallery detail page</target>
+</trans-unit>
+<trans-unit id="s5d463fdf535d0dc4">
+  <source>Scroll kepaling bawah</source>
+  <target>Scroll to the bottom</target>
+</trans-unit>
+<trans-unit id="sd3b91127a9e344af">
+  <source>Tulis Ulasan, jika belum login, lakukan login terlebih dahulu</source>
+  <target>Write a review, if not logged in, log in first</target>
+</trans-unit>
+<trans-unit id="se6bd946d1288a5cc">
+  <source>jika sudah login</source>
+  <target>If already logged in</target>
+</trans-unit>
+<trans-unit id="s1615a3730358fb89">
+  <source>Tuliskan Nama dan Tuliskan Ulasan</source>
+  <target>Write Name and Write Review</target>
+</trans-unit>
+<trans-unit id="seab46c9dc339f63f">
+  <source>Kirim</source>
+  <target>Send</target>
+</trans-unit>
+<trans-unit id="s3f79e8188d0e6c75">
+  <source>Klik News</source>
+  <target>Click News</target>
+</trans-unit>
+<trans-unit id="sc0cf2070f3fe15b4">
+  <source>Event, kemudian Read More</source>
+  <target>Event, then Read More</target>
+</trans-unit>
+<trans-unit id="s0bde5f742999f39d">
+  <source>Menampilkan Detail Event</source>
+  <target>Show Event Details</target>
+</trans-unit>
+<trans-unit id="sf92764ed0941a297">
+  <source>News, lalu Read More</source>
+  <target>News, then Read More</target>
+</trans-unit>
+<trans-unit id="sd7adcf7e7562d7b2">
+  <source>Pindah ke Halaman News</source>
+  <target>Move to News Page</target>
+</trans-unit>
+<trans-unit id="sf9b89d298887bce3">
+  <source>Melihat Kalender Budaya</source>
+  <target>View Cultural Calendar</target>
+</trans-unit>
+<trans-unit id="s87f064377a166315">
+  <source>Kalender Budaya</source>
+  <target>Cultural Calendar</target>
+</trans-unit>
+<trans-unit id="s37ae3eb3060b4a88">
+  <source>Klik pada tanggal yang memiliki kegiatan</source>
+  <target>Click on the date with activities</target>
+</trans-unit>
+<trans-unit id="s7b049b4800b39faf">
+  <source>Detail informasi kegiatan seni</source>
+  <target>Details of art activities</target>
+</trans-unit>
+<trans-unit id="s775fc3deab4cb2d3">
+  <source>Hubungi Kami</source>
+  <target>Contact Us</target>
+</trans-unit>
+<trans-unit id="sd1f44f1a8bc20e67">
+  <source>Email</source>
+  <target>Email</target>
+</trans-unit>
+<trans-unit id="s45f9f6a648783702">
+  <source>Telepon</source>
+  <target>Phone</target>
+</trans-unit>
+<trans-unit id="saeca81be1d97500f">
+  <source>Alamat</source>
+  <target>Address</target>
+</trans-unit>
+<trans-unit id="sef49b2c68fd1e332">
+  <source>Nama</source>
+  <target>Name</target>
+</trans-unit>
+<trans-unit id="s126de8eae6b883e4">
+  <source>Pesan</source>
+  <target>Message</target>
+</trans-unit>
+<trans-unit id="s5e81ca84c77ba273">
+  <source>Tutorial Penggunaan</source>
+  <target>Usage Tutorial</target>
+</trans-unit>
+<trans-unit id="sf871c4e5c4bcc8b3">
+  <source>Hubungi kami</source>
+  <target>Contact us</target>
+</trans-unit>
+<trans-unit id="s0c1e5882a78ee6e1">
+  <source>Jangan ragu untuk menghubungi kami jika ada pertanyaan atau kekhawatiran. Kami di sini untuk membantu!</source>
+  <target>Do not hesitate to contact us if you have any questions or concerns. We are here to help!</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

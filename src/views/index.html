@@ -11,10 +11,11 @@
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
   </head>
   <body>
+    <a href="#maincontent" class="skip-to-content" tabindex="0" id="skipLink">Skip To Content</a>
     <header>
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
-    <main style="margin-top: 55px">
+    <main style="margin-top: 55px" id="maincontent">
       <hero-app></hero-app>
       <div id="all-about-here" class="img-fluid background-batik-custom"></div>
       <explore-section></explore-section>

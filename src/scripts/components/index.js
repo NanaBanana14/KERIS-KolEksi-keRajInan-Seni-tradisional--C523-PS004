@@ -34,6 +34,12 @@ import './kalendar-budaya-page/HeaderKabud';
 import './kalendar-budaya-page/CardCalendar';
 import './kalendar-budaya-page/MainContentKabud';
 
+// Pusat Bantuan Page Custom
+import './pusat-bantuan-page/HelpCenter';
+import './pusat-bantuan-page/TutorialNav';
+import './pusat-bantuan-page/TutorialBody';
+import './pusat-bantuan-page/ContactUs';
+import './pusat-bantuan-page/HelpCenterMain';
 
 // inisialisasi komponen bootstrap
 const carousels = document.querySelectorAll('.carousel'); // Temukan semua elemen dengan kelas .carousel
