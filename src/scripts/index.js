@@ -13,6 +13,7 @@ import './views/pages/menu/main';
 import renderDetailArtPage from './views/pages/menu/detailgaleriseni';
 import loginPageFunction from './views/pages/auth/login';
 import registPageFunction from './views/pages/auth/register';
+import swRegister from './utils/sw-register';
 
 /* eslint-disable */
 import * as bootstrap from 'bootstrap';
@@ -71,4 +72,6 @@ window.addEventListener('load', async () => {
   if (url.includes('regist')) {
     registPageFunction();
   }
+
+  swRegister();
 });
