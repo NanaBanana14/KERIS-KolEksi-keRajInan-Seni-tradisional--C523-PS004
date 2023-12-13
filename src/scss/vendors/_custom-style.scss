@@ -140,6 +140,24 @@ body {
 // Custom Bootstrap Class Styles
 // ==============================
 
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(97, 66, 46, 1);
+}
+
+.accordion-button[aria-expanded='true'] {
+  background-color: rgba(97, 66, 46, 0.5);
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.accordion-body .nav .nav-item .nav-link {
+  color: $primary-color;
+}
+
+.accordion-body .nav .nav-item .nav-link.active {
+  background-color: $primary-color;
+  color: white;
+}
 // ==============================
 // Media Query
 // ==============================
