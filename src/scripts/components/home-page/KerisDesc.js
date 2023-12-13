@@ -11,7 +11,7 @@ class KerisDesc extends LitWithoutShadowDom {
   render() {
     return html`
     <div class="hero">
-    <div class="row align-items-center">
+      <div class="row align-items-center">
         <!--text-->
         <div class="col-md-5">
             <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FQuestions-pana.png?alt=media&token=e6686d89-0708-48cb-b68d-4f9f24b6d584" alt="lp" class="w-100" />
@@ -24,7 +24,7 @@ class KerisDesc extends LitWithoutShadowDom {
             </p>
             </div>
         </div>
-        </div>
+      </div>
     </div>
     `;
   }
