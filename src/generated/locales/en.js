@@ -12,6 +12,7 @@
       's0180d2cc863232c9': `Viewing Events and News`,
 's0239589f90d5aaca': `To see more information`,
 's0bde5f742999f39d': `Show Event Details`,
+'s0c1e5882a78ee6e1': `Do not hesitate to contact us if you have any questions or concerns. We are here to help!`,
 's0fd75cc6a1aad906': `News`,
 's126de8eae6b883e4': `Message`,
 's1615a3730358fb89': `Write Name and Write Review`,

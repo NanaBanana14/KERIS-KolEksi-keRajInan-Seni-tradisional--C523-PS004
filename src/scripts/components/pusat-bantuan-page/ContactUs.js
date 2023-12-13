@@ -13,13 +13,13 @@ class ContactUs extends LitWithoutShadowDom {
  <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8">
-            <h1>${msg('Hubungi Kami')}Hubungi Kami</h1>
-            <p>${msg('Hubungi Kami')}Jangan ragu untuk menghubungi kami jika ada pertanyaan atau kekhawatiran. Kami di sini untuk membantu!</p>
+            <h1>${msg('Hubungi Kami')}</h1>
+            <p>${msg('Jangan ragu untuk menghubungi kami jika ada pertanyaan atau kekhawatiran. Kami di sini untuk membantu!')}</p>
 
             <div class="contact-info">
-                <p><strong>${msg('Email')}Email:</strong> info@example.com</p>
-                <p><strong>${msg('Telepon')}Telepon:</strong> +1 (123) 456-7890</p>
-                <p><strong>${msg('Alamat')}Alamat:</strong> 123 Jalan Utama, Kota, Provinsi, 12345</p>
+                <p><strong>${msg('Email')}:</strong> info@example.com</p>
+                <p><strong>${msg('Telepon')}:</strong> +1 (123) 456-7890</p>
+                <p><strong>${msg('Alamat')}:</strong> 123 Jalan Utama, Kota, Provinsi, 12345</p>
             </div>
         </div>
 
@@ -32,7 +32,7 @@ class ContactUs extends LitWithoutShadowDom {
                     </div>
 
                     <div class="form-group">
-                        <label for="email">${msg('Email')}Email:</label>
+                        <label for="email">${msg('Email')}:</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
 
@@ -41,7 +41,7 @@ class ContactUs extends LitWithoutShadowDom {
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
 
-                    <button type="button" class="btn btn-brown-white mt-4">Kirim</button>
+                    <button type="button" class="btn btn-brown-white mt-4">${msg('Kirim')}</button>
                 </form>
             </div>
         </div>
