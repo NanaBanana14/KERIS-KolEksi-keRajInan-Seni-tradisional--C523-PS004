@@ -136,23 +136,9 @@ body {
   transform: scale(1.05);
 }
 
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: $primary-color;
-  color: white;
-  padding: 8px;
-  z-index: 100;
-}
- 
-.skip-link:focus {
-   top: 0;
-}
-
 .skip-to-content {
   position: absolute;
-  z-index: 999;
+  z-index: 9999;
   top: -100px;
   left: 0;
   background-color: whitesmoke;
@@ -161,7 +147,7 @@ body {
   padding: 10px;
 }
 .skip-to-content:focus {
-  top: 0;
+  top: 0px;
 }
 
 // ==============================

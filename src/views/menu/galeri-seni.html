@@ -11,7 +11,7 @@
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
   </head>
   <body>
-    <a href="#maincontent" class="skip-link" tabindex="0" id="skipLink">Skip To Content</a>
+    <a href="#mainContent" class="skip-to-content" id="skip-to-content">Skip To Content</a>
     <header>
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
@@ -24,6 +24,7 @@
       <arts-navigasi></arts-navigasi>
 
       <!-- Item Arts -->
+      <div id="mainContent"></div>
       <div id="list-arts" class="d-flex flex-wrap justify-content-center p-4 gap-4"></div>
     </main>
 
