@@ -1,10 +1,12 @@
 /* eslint-disable */
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createArtTemplate = (art) => `
   <div class="card position-relative" style="width: 18rem">
     <img
-      src="${art.image_url}"
-      class="card-img-top"
+      data-src="${art.image_url}"
+      class="lazyload card-img-top"
       alt="${art.name}"
       style="height: 200px; object-fit: cover"
     />
@@ -23,9 +25,9 @@ const createDetailArt = (art) => `
             <div class="row">
                  <div class="col d-flex align-items-center">
                      <img
-                         class="img-fluid rounded"
-                        src="${art.image_url}"
-                         alt="${art.name}"
+                        class="lazyload img-fluid rounded"
+                        data-src="${art.image_url}"
+                        alt="${art.name}"
                         style="min-width: 200px; max-width: 500px"
                     />
                     </div>
@@ -90,7 +92,7 @@ const createReview = (review) => `
 const createEventTemplate = (event) => `
   <div class="event-item card mb-3 col-md-4 position-relative p-0" id="event-${event.id}">
     <div class="position-relative">
-      <img src="${event['image-url']}" class="card-img-top" alt="${event['name']}" style="height: 200px; object-fit: cover">
+      <img data-src="${event['image-url']}" class="lazyload card-img-top" alt="${event['name']}" style="height: 200px; object-fit: cover">
       <p class="card-text text-white p-2 rounded bg-brown position-absolute bottom-0 start-0 bi bi-calendar-event"> ${event['date']}</p>
     </div>
     <div class="card-body">
@@ -104,7 +106,7 @@ const createEventTemplate = (event) => `
 const createEventDetailTemplate = (eventDetail) => `
   <div class="card mb-3 col-md-12">
     <div class="d-flex">
-      <img src="${eventDetail['image-url']}" class="card-img-left w-50" alt="${eventDetail.name}">
+      <img data-src="${eventDetail['image-url']}" class="lazyload card-img-left w-50" alt="${eventDetail.name}">
       <div class="card-body ms-3">
       <h5 class="card-title text-center">${eventDetail.name}</h5>
         <div class="d-flex justify-content-between mt-3 gap-3">
@@ -120,7 +122,7 @@ const createEventDetailTemplate = (eventDetail) => `
 
 const createNewsTemplate = (news) => `
   <div class="news-item card mb-3 col-md-4 position-relative p-0">
-    <img src="${news['image-url']}" class="card-img-top" alt="${news['title']}" style="height: 200px; object-fit: cover">
+    <img data-src="${news['image-url']}" class="lazyload card-img-top" alt="${news['title']}" style="height: 200px; object-fit: cover">
     <div class="card-body">
       <h5 class="card-title mb-5">${news['title']}</h5>
       <p class="card-text position-absolute bottom-0 start-0 mb-3 mx-3"><i class="bi bi-calendar-event"></i> ${news['publish-date']}</p>
