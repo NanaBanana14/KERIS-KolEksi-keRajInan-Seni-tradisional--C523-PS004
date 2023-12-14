@@ -11,6 +11,7 @@
     <title><%= htmlWebpackPlugin.options.title %> | KERIS App</title>
   </head>
   <body>
+    <a href="#mainContent" class="skip-to-content" id="skip-to-content">Skip To Content</a>
     <header>
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
@@ -20,7 +21,7 @@
       <div class="img-fluid background-batik-custom">
         <div></div>
       </div>
-      <div class="container mt-5 p-0">
+      <div id="mainContent" class="container mt-5 p-0">
         <div class="column">
           <event-section></event-section>
           <news-section></news-section>

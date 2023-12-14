@@ -30,7 +30,7 @@ const createDetailArt = (art) => `
                     />
                     </div>
                     <div class="col d-flex align-items-center">
-                    <h2 class="text-white fw-bold">${art.name}</h2>
+                    <h2 id="mainContent" class="text-white fw-bold">${art.name}</h2>
                  </div>
              </div>
         </div>

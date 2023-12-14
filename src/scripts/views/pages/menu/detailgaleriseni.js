@@ -1,10 +1,6 @@
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import Arts from '../../../network/arts';
-import {
-  createDetailArt,
-  createSeller,
-  createReview,
-} from '../../templates/template-creator';
+import { createDetailArt, createSeller, createReview } from '../../templates/template-creator';
 
 const getIdFromUrl = () => {
   // Mengambil URL saat ini
@@ -73,6 +69,7 @@ const renderDetailArtPage = async () => {
   const buttonSubmitReview = document.getElementById('button-submit-review');
   buttonSubmitReview.addEventListener('click', async () => {
     await addReview(id);
+    renderReview(id);
   });
 };
 
