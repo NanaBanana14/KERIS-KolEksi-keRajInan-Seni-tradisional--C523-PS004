@@ -104,11 +104,14 @@ const createEventTemplate = (event) => `
 `;
 
 const createEventDetailTemplate = (eventDetail) => `
-  <div class="card mb-3 col-md-12">
-    <div class="d-flex">
-      <img data-src="${eventDetail['image-url']}" class="lazyload card-img-left w-50" alt="${eventDetail.name}">
-      <div class="card-body ms-3">
-      <h5 class="card-title text-center">${eventDetail.name}</h5>
+<div class="card mb-3 col-md-12">
+  <div class="row">
+    <div class="col-md-6">
+      <img data-src="${eventDetail['image-url']}" class="lazyload card-img-left w-100" alt="${eventDetail.name}">
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title text-center">${eventDetail.name}</h5>
         <div class="d-flex justify-content-between mt-3 gap-3">
           <p class="card-text bi bi-calendar-event p-2"> ${eventDetail.date}</p>
           <p class="card-text bi bi-geo-alt-fill p-2"> ${eventDetail.location}</p>
@@ -117,7 +120,7 @@ const createEventDetailTemplate = (eventDetail) => `
       </div>
     </div>
   </div>
-
+</div>
 `;
 
 const createNewsTemplate = (news) => `
