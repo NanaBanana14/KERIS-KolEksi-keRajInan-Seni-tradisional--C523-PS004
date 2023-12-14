@@ -1,8 +1,8 @@
 ---
-## Tambahan Penjelasan Proyek
+## KERIS App
 ---
 
-Proyek ini merupakan sebuah website koleksi kerajinan seni yang dibangun dengan mengikuti langkah-langkah metode Design Thinking. Berikut adalah beberapa poin tambahan tentang pengembangan proyek ini:
+KERIS merupakan situs web yang berisi informasi seputar karya seni tradisional Indonesia, sesuai dengan kepanjangan dari namanya yaitu Koleksi Kerajinan Seni Tradisional. Proyek ini merupakan sebuah website koleksi kerajinan seni yang dibangun dengan mengikuti langkah-langkah metode Design Thinking. Berikut adalah beberapa poin tambahan tentang pengembangan proyek ini:
 
 1. **Desain Berbasis Design Thinking:**
    - Proyek ini didesain dengan menerapkan prinsip-prinsip Design Thinking, diawali dengan tahap Empathize menggunakan penyebaran kuesioner untuk memahami preferensi pengguna.
