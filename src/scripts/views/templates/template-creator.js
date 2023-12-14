@@ -107,7 +107,7 @@ const createEventDetailTemplate = (eventDetail) => `
 <div class="card mb-3 col-md-12">
   <div class="row">
     <div class="col-md-6">
-      <img data-src="${eventDetail['image-url']}" class="lazyload card-img-left w-100" alt="${eventDetail.name}">
+      <img data-src="${eventDetail['image-url']}" class="lazyload card-img-left w-100 rounded" alt="${eventDetail.name}">
     </div>
     <div class="col-md-6">
       <div class="card-body">
