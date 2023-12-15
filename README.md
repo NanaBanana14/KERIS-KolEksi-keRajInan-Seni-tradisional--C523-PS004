@@ -25,6 +25,7 @@ KERIS merupakan situs web yang berisi informasi seputar karya seni tradisional I
    - Menambahkan aksesibilitas _skip to content_ untuk memperbaiki pengalaman pengguna dengan navigasi cepat.
    - Menggunakan Bundle Analyzer dan SplitChunks untuk meningkatkan efisiensi _loading_ dan _caching_.
    - Menggunakan workbox untuk strategi caching agar aplikasi tetap dapat di akses ketika keadaan offline.
+   - Menggunakan localize agar aplikasi dapat digunakan dalam 2 bahasa yaitu bahasa indonesia dan bahasa inggris.
 
 6. **Optimasi CSS:**
    - Proyek ini melakukan optimasi CSS dengan meminimalkan ukuran file CSS untuk mempercepat waktu pemuatan halaman.
