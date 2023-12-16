@@ -30,22 +30,18 @@ async function newslist() {
 
     let currentIndex = 3;
 
-    // Add event listener to "Selanjutnya" button
     btnNewsSelanjutnya.addEventListener('click', (event) => {
       event.preventDefault();
 
-      // Show the next three hidden news cards
-      for (let i = currentIndex; i < currentIndex + 3; i++) {
+      for (let i = currentIndex; i < news.length; i++) {
         const card = newsListContainer.children[i];
         if (card) {
           card.style.display = 'block';
         }
       }
-      currentIndex += 3;
+      currentIndex = news.length;
 
-      if (currentIndex >= news.length) {
-        btnNewsSelanjutnya.style.display = 'none';
-      }
+      btnNewsSelanjutnya.style.display = 'none';
     });
   } catch (error) {
     console.error('Error fetching news:', error.message);
