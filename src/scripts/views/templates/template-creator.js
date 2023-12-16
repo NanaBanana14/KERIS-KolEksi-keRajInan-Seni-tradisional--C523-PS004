@@ -129,7 +129,7 @@ const createNewsTemplate = (news) => `
     <div class="card-body">
       <h5 class="card-title mb-5">${news['title']}</h5>
       <p class="card-text position-absolute bottom-0 start-0 mb-3 mx-3"><i class="bi bi-calendar-event"></i> ${news['publish-date']}</p>
-      <a href="${news['source']}" class="btn btn-brown-white position-absolute bottom-0 end-0 mb-3 mx-3" target="_blank">Read more <i class="bi bi-arrow-right-circle-fill"></i></a>
+      <a href="${news['source']}" class="btn btn-brown-white position-absolute bottom-0 end-0 mb-3 mx-3" target="_blank" rel="noreferrer noopener">Read more <i class="bi bi-arrow-right-circle-fill"></i></a>
     </div>
   </div>
 `;
