@@ -8,31 +8,27 @@ async function newslist() {
     const newsListContainer = document.getElementById('news-list-container');
     const btnNewsSelanjutnya = document.getElementById('btnNewsSelanjutnya');
 
-    // Sort news by the latest date
     news.sort((a, b) => {
       const dateA = new Date(a['publish-date']);
       const dateB = new Date(b['publish-date']);
 
-      // Check if the dates are valid
       if (!isNaN(dateA) && !isNaN(dateB)) {
         return dateB - dateA;
       }
       return b['publish-date'].localeCompare(a['publish-date']);
     });
 
-    // Hide all news cards except the first three
     news.forEach((newsItem, index) => {
       const newsCard = createNewsTemplate(newsItem);
       newsListContainer.innerHTML += newsCard;
 
-      // Hide cards after the first three
       if (index >= 3) {
         const card = newsListContainer.children[index];
         card.style.display = 'none';
       }
     });
 
-    let currentIndex = 3; // Start with the fourth news card
+    let currentIndex = 3;
 
     // Add event listener to "Selanjutnya" button
     btnNewsSelanjutnya.addEventListener('click', (event) => {
@@ -47,7 +43,6 @@ async function newslist() {
       }
       currentIndex += 3;
 
-      // Hide the "Selanjutnya" button if there are no more news cards
       if (currentIndex >= news.length) {
         btnNewsSelanjutnya.style.display = 'none';
       }
