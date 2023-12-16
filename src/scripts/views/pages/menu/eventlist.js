@@ -20,14 +20,10 @@ async function eventlist() {
     const eventListContainer = document.getElementById('event-list-container');
     const btnSelanjutnya = document.getElementById('btnSelanjutnya');
 
-    // Sort events based on status, with upcoming events first
+    // Sort events based on status
     events.sort((a, b) => {
-      if (a.status === 'Upcoming' && b.status !== 'Upcoming') {
-        return -1; // a comes first
-      } if (b.status === 'Upcoming' && a.status !== 'Upcoming') {
-        return 1; // b comes first
-      } 
-      return 0; // no change in order
+      const statusOrder = { Ongoing: 0, Upcoming: 1, Completed: 2 };
+      return statusOrder[a.status] - statusOrder[b.status];
     });
 
     // Hide all cards except the first three
@@ -35,7 +31,6 @@ async function eventlist() {
       const eventCard = createEventTemplate(event);
       eventListContainer.innerHTML += eventCard;
 
-      // Hide cards after the first three
       if (index >= 3) {
         const card = eventListContainer.children[index];
         card.style.display = 'none';
@@ -44,12 +39,10 @@ async function eventlist() {
 
     let currentIndex = 3;
 
-    // Add event listener to "Read More" buttons
     document.querySelectorAll('.btn-event-detail').forEach((button) => {
       button.addEventListener('click', (event) => handleEventClick(event));
     });
 
-    // Add event listener to "Selanjutnya" button
     btnSelanjutnya.addEventListener('click', (event) => {
       event.preventDefault();
 
@@ -62,7 +55,6 @@ async function eventlist() {
       }
       currentIndex += 3;
 
-      // Hide the "Selanjutnya" button if there are no more cards
       if (currentIndex >= events.length) {
         btnSelanjutnya.style.display = 'none';
       }
