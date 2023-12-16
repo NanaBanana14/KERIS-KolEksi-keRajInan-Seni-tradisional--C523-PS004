@@ -1,6 +1,8 @@
 import { html } from 'lit';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 class KerisDesc extends LitWithoutShadowDom {
   constructor() {
@@ -14,7 +16,7 @@ class KerisDesc extends LitWithoutShadowDom {
       <div class="row align-items-center">
         <!--text-->
         <div class="col-md-5">
-            <img src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FQuestions-pana.png?alt=media&token=e6686d89-0708-48cb-b68d-4f9f24b6d584" alt="lp" class="w-100" />
+            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FQuestions-pana.png?alt=media&token=e6686d89-0708-48cb-b68d-4f9f24b6d584" alt="lp" class="lazyload w-100" />
         </div>
         <!--img-->
         <div class="col-md-6 text-md-start">

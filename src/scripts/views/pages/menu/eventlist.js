@@ -46,18 +46,15 @@ async function eventlist() {
     btnSelanjutnya.addEventListener('click', (event) => {
       event.preventDefault();
 
-      // Show the next three hidden cards
-      for (let i = currentIndex; i < currentIndex + 3; i++) {
+      for (let i = currentIndex; i < events.length; i++) {
         const card = eventListContainer.children[i];
         if (card) {
           card.style.display = 'block';
         }
       }
-      currentIndex += 3;
+      currentIndex = events.length;
 
-      if (currentIndex >= events.length) {
-        btnSelanjutnya.style.display = 'none';
-      }
+      btnSelanjutnya.style.display = 'none';
     });
   } catch (error) {
     // console.error('Error fetching events:', error.message);

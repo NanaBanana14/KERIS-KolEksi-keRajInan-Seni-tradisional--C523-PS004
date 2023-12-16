@@ -2,17 +2,10 @@
 import { html } from 'lit';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
 import developersData from '../../../public/data/developer-data';
-// import 'aos/dist/aos.css';
-// import AOS from 'aos';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 class DeveloperCard extends LitWithoutShadowDom {
-  // constructor() {
-  //   super();
-  //   this.addEventListener('firstUpdated', () => {
-  //     AOS.init();
-  //     AOS.refresh();
-  //   });
-  // }
 
   render() {
     return html`
@@ -21,7 +14,7 @@ class DeveloperCard extends LitWithoutShadowDom {
           (developer) => html`
             <div class="card border shadow" style="width: 20rem">
               <div class="bg-brown rounded-top p-3 position-relative mb-5" style="height: 100px;">
-                <img class="card-img-top w-50 position-absolute top-100 start-50 translate-middle" src="${developer.image}" alt="${developer.name}" />
+                <img class="lazyload card-img-top w-50 position-absolute top-100 start-50 translate-middle" data-src="${developer.image}" alt="${developer.name}" />
               </div>
               <div class="card-body mt-5 d-flex flex-column justify-content-evenly align-items-center">
                 <h5 class="card-title m-0">${developer.name}</h5>

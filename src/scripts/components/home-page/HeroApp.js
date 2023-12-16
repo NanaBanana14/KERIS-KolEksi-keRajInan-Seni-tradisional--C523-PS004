@@ -1,6 +1,8 @@
 import { html } from 'lit';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 class HeroApp extends LitWithoutShadowDom {
   constructor() {
@@ -16,9 +18,9 @@ class HeroApp extends LitWithoutShadowDom {
           <!--img-->
           <div class="col-md-5 order-md-last">
             <img 
-              src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Flp.1.png?alt=media&token=f5352feb-7553-4909-802d-fdd2b30bafb7" 
+              data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Flp.1.png?alt=media&token=f5352feb-7553-4909-802d-fdd2b30bafb7" 
               alt="landing page" 
-              class="w-100" />
+              class="lazyload w-100" />
           </div>
           
           <!--text-->

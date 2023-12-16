@@ -1,6 +1,8 @@
 import { html } from 'lit';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import LitWithoutShadowDom from '../base/LitWithoutShadowDom';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 class ExploreCard extends LitWithoutShadowDom {
   constructor() {
@@ -30,8 +32,8 @@ class ExploreCard extends LitWithoutShadowDom {
           tabindex="0"
         >
           <img 
-            class="w-75 position-absolute top-0 start-50 translate-middle"
-            src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fgaleri%20seni.svg?alt=media&token=6316ef74-cac0-407b-83d0-957076cc1472" 
+            class="lazyload w-75 position-absolute top-0 start-50 translate-middle"
+            data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fgaleri%20seni.svg?alt=media&token=6316ef74-cac0-407b-83d0-957076cc1472" 
             alt="explore card"
           />
           <div class="card-body text-center" style="margin-top: 80px;">
@@ -48,8 +50,8 @@ class ExploreCard extends LitWithoutShadowDom {
           tabindex="0"
         >
           <img 
-            class="w-75 position-absolute top-0 start-50 translate-middle"
-            src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fcalendar%20budaya.png?alt=media&token=92d54119-c894-43d7-8c9d-cf74b71425a2" 
+            class="lazyload w-75 position-absolute top-0 start-50 translate-middle"
+            data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2Fcalendar%20budaya.png?alt=media&token=92d54119-c894-43d7-8c9d-cf74b71425a2" 
             alt="explore card"
           />
           <div class="card-body text-center" style="margin-top: 80px;">
@@ -66,8 +68,8 @@ class ExploreCard extends LitWithoutShadowDom {
           tabindex="0"
         >
           <img 
-            class="w-75 position-absolute top-0 start-50 translate-middle"
-            src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FNews.png?alt=media&token=302776bf-bf47-4761-89f0-fd9a98760ebd" 
+            class="lazyload w-75 position-absolute top-0 start-50 translate-middle"
+            data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Filustration-landingpage%2FNews.png?alt=media&token=302776bf-bf47-4761-89f0-fd9a98760ebd" 
             alt="explore card"
           />
           <div class="card-body text-center" style="margin-top: 80px;">
