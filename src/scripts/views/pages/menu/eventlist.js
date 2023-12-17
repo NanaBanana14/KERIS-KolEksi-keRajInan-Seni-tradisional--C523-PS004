@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Arts from '../../../network/arts';
 import { createEventTemplate } from '../../templates/template-creator';
 import showEventDetailByUrl from './eventdetail';
@@ -34,17 +35,14 @@ async function eventlist() {
     const eventListContainer = document.getElementById('event-list-container');
     const btnSelanjutnya = document.getElementById('btnSelanjutnya');
 
-    // Pisahkan event berdasarkan status
     const ongoingEvents = events.filter(event => getEventStatus(event['start-date'], event['end-date']) === 'Ongoing');
     const upcomingEvents = events.filter(event => getEventStatus(event['start-date'], event['end-date']) === 'Upcoming');
     const completedEvents = events.filter(event => getEventStatus(event['start-date'], event['end-date']) === 'Completed');
 
-    // Urutkan event berdasarkan tanggal (end-date) secara descending
     ongoingEvents.sort((a, b) => new Date(b['end-date']) - new Date(a['end-date']));
     upcomingEvents.sort((a, b) => new Date(b['end-date']) - new Date(a['end-date']));
     completedEvents.sort((a, b) => new Date(b['end-date']) - new Date(a['end-date']));
 
-    // Gabungkan kembali ke dalam satu array
     const sortedEvents = [...ongoingEvents, ...upcomingEvents, ...completedEvents];
 
     // Hide all cards except the first three

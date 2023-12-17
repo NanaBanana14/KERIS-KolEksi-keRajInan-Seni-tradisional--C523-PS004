@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Arts from '../../../network/arts';
 import { createNewsTemplate } from '../../templates/template-creator';
 
