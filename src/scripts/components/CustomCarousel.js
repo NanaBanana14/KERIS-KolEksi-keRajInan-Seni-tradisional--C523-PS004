@@ -25,13 +25,13 @@ class CustomCarousel extends LitWithoutShadowDom {
         </div>
         <div class="carousel-inner rounded">
           <div class="carousel-item active">
-            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-event-1.jpg?alt=media&token=f16a9587-385d-4452-9351-ceb62a3f3d4d" class="lazyload d-block w-100" alt="..." />
+            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fcarousel-news-2.jpg?alt=media&token=743a50d2-139e-4b62-9e45-02a64a3c1d6c" class="lazyload d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-event-2.jpg?alt=media&token=5b2884be-18f6-4982-87d0-a56a4f0cc4d0" class="lazyload d-block w-100" alt="..." />
+            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fcarousel-news-3.1.jpg?alt=media&token=6927af88-e0f0-4a23-b3a8-52c552dcc1a4" class="lazyload d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fbanner-news-1.jpg?alt=media&token=4c86a62d-1c18-484c-bf23-6050af61274b" class="lazyload d-block w-100" alt="..." />
+            <img data-src="https://firebasestorage.googleapis.com/v0/b/keris-api.appspot.com/o/images%2Fbanner%2Fcarousel-news-1.jpg?alt=media&token=6ec625f9-9fa9-4c80-964c-9b897767cd82" class="lazyload d-block w-100" alt="..." />
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
