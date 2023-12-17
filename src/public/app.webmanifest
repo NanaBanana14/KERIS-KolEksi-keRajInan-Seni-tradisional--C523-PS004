@@ -45,7 +45,7 @@
       "purpose": "any"
     },
     {
-      "src": "./icons/maskable_icon.png",
+      "src": "./icons/icon_512x512.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"
