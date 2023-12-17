@@ -13,6 +13,20 @@ function handleEventClick(event) {
   }
 }
 
+function getEventStatus(startDate, endDate) {
+  const currentDate = new Date();
+
+  const startDateTime = new Date(startDate);
+  const endDateTime = new Date(endDate);
+
+  if (currentDate >= startDateTime && currentDate <= endDateTime) {
+    return 'Ongoing';
+  } if (currentDate < startDateTime) {
+    return 'Upcoming';
+  }
+  return 'Completed';
+}
+
 async function eventlist() {
   try {
     const eventsResponse = await Arts.getAllEvents();
@@ -20,14 +34,25 @@ async function eventlist() {
     const eventListContainer = document.getElementById('event-list-container');
     const btnSelanjutnya = document.getElementById('btnSelanjutnya');
 
-    // Sort events based on status
-    events.sort((a, b) => {
-      const statusOrder = { Ongoing: 0, Upcoming: 1, Completed: 2 };
-      return statusOrder[a.status] - statusOrder[b.status];
-    });
+    // Pisahkan event berdasarkan status
+    const ongoingEvents = events.filter(event => getEventStatus(event['start-date'], event['end-date']) === 'Ongoing');
+    const upcomingEvents = events.filter(event => getEventStatus(event['start-date'], event['end-date']) === 'Upcoming');
+    const completedEvents = events.filter(event => getEventStatus(event['start-date'], event['end-date']) === 'Completed');
+
+    // Urutkan event berdasarkan tanggal (end-date) secara descending
+    ongoingEvents.sort((a, b) => new Date(b['end-date']) - new Date(a['end-date']));
+    upcomingEvents.sort((a, b) => new Date(b['end-date']) - new Date(a['end-date']));
+    completedEvents.sort((a, b) => new Date(b['end-date']) - new Date(a['end-date']));
+
+    // Gabungkan kembali ke dalam satu array
+    const sortedEvents = [...ongoingEvents, ...upcomingEvents, ...completedEvents];
 
     // Hide all cards except the first three
-    events.forEach((event, index) => {
+    sortedEvents.forEach((event, index) => {
+      // Mendapatkan status event berdasarkan tanggal saat ini, start-date, dan end-date
+      const status = getEventStatus(event['start-date'], event['end-date']);
+      event.status = status;
+
       const eventCard = createEventTemplate(event);
       eventListContainer.innerHTML += eventCard;
 
@@ -46,13 +71,13 @@ async function eventlist() {
     btnSelanjutnya.addEventListener('click', (event) => {
       event.preventDefault();
 
-      for (let i = currentIndex; i < events.length; i++) {
+      for (let i = currentIndex; i < sortedEvents.length; i++) {
         const card = eventListContainer.children[i];
         if (card) {
           card.style.display = 'block';
         }
       }
-      currentIndex = events.length;
+      currentIndex = sortedEvents.length;
 
       btnSelanjutnya.style.display = 'none';
     });
