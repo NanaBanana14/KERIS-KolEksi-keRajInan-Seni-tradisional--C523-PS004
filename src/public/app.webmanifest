@@ -1,6 +1,6 @@
 {
   "id": "keris-lite-pwa-1",
-  "start_url": "./index.html",
+  "start_url": "../../",
   "name": "KERIS Arts Gallery Lite",
   "short_name": "KERIS Lite",
   "description": "KERIS is a platform that promotes and preserves traditional Indonesian art and culture.",
@@ -43,6 +43,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "./icons/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "maskable": "./icons/icon_512x512.png"

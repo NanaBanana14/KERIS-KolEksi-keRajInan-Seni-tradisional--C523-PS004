@@ -30,6 +30,7 @@ class CardCalendar extends LitWithoutShadowDom {
                     <div class="p-2 embed-responsive embed-responsive-16by9">
                         <iframe
                         class="embed-responsive-item shadow calendar"
+                        title="calendarBudaya"
                         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FJakarta&showTitle=0&src=a2VyaXNhcHB0ZWFtcDAwNEBnbWFpbC5jb20&color=%23039BE5"
                         ></iframe>
                     </div>
