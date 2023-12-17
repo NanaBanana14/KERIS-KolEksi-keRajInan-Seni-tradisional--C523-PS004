@@ -127,7 +127,7 @@ const createNewsTemplate = (news) => `
   <div class="news-item card mb-3 col-md-4 position-relative p-0">
     <div class="position-relative">
       <img data-src="${news['image-url']}" class="lazyload card-img-top" alt="${news['title']}" style="height: 200px; object-fit: cover">
-      <p class="card-text text-white p-2 rounded bg-brown position-absolute bottom-0 start-0 bi bi-calendar-event"> ${news['publish-date']}</p>
+      <p class="card-text text-white p-2 rounded bg-brown position-absolute bottom-0 start-0 bi bi-calendar-event"> ${news['formatted-date']}</p>
     </div>
     <div class="card-body">
       <h5 class="card-title mb-5">${news['title']}</h5>
@@ -135,5 +135,6 @@ const createNewsTemplate = (news) => `
     </div>
   </div>
 `;
+
 
 export { createArtTemplate, createDetailArt, createSeller, createReview, createEventTemplate, createEventDetailTemplate, createNewsTemplate };

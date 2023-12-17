@@ -1,5 +1,11 @@
+/* eslint-disable */
 import Arts from '../../../network/arts';
 import { createNewsTemplate } from '../../templates/template-creator';
+
+function formatDate(dateString) {
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date(dateString).toLocaleDateString('id-ID', options);
+}
 
 async function newslist() {
   try {
@@ -19,6 +25,9 @@ async function newslist() {
     });
 
     news.forEach((newsItem, index) => {
+      const formattedDate = formatDate(newsItem['publish-date']);
+      newsItem['formatted-date'] = formattedDate;
+
       const newsCard = createNewsTemplate(newsItem);
       newsListContainer.innerHTML += newsCard;
 

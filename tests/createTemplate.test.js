@@ -28,7 +28,7 @@ describe('News Template Creation', () => {
       id: 1,
       title: 'News Title',
       'image-url': 'path/to/image.jpg',
-      'publish-date': '2023-01-01',
+      'formatted-date': 'January 1, 2023',
       source: 'https://example.com/news',
     };
 
@@ -36,7 +36,7 @@ describe('News Template Creation', () => {
 
     expect(template).toContain(news.title);
     expect(template).toContain(news['image-url']);
-    expect(template).toContain(news['publish-date']);
+    expect(template).toContain(news['formatted-date']);
     expect(template).toContain(news.source);
   });
 });
