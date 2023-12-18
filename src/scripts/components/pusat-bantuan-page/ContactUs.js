@@ -17,9 +17,9 @@ class ContactUs extends LitWithoutShadowDom {
             <p>${msg('Jangan ragu untuk menghubungi kami jika ada pertanyaan atau kekhawatiran. Kami di sini untuk membantu!')}</p>
 
             <div class="contact-info">
-                <p><strong>${msg('Email')}:</strong> info@example.com</p>
+                <p><strong>${msg('Email')}:</strong> keristeam@gmail.com</p>
                 <p><strong>${msg('Telepon')}:</strong> +1 (123) 456-7890</p>
-                <p><strong>${msg('Alamat')}:</strong> 123 Jalan Utama, Kota, Provinsi, 12345</p>
+                <p><strong>${msg('Alamat')}:</strong> 123 Jalan Maju mundur, Kota, Provinsi, 12345</p>
             </div>
         </div>
 
