@@ -10,7 +10,7 @@ KERIS merupakan situs web yang berisi informasi seputar karya seni tradisional I
 2. **Langkah-langkah Design Thinking:**
    - **Empathize:** Melibatkan pengguna dengan menyebarkan kuesioner untuk mendapatkan pemahaman mendalam tentang preferensi dan kebutuhan mereka.
    - **Define:** Mengelompokkan data dan merumuskan masalah yang dihadapi oleh calon pengguna berdasarkan hasil dari tahap Empathize.
-   - **Ideate:** Menghasilkan solusi kreatif berupa fitur-fitur seperti galeri seni, detail galeri seni, ulasan seni, berita, acara, dan kalendar budaya.
+   - **Ideate:** Menghasilkan solusi kreatif berupa fitur-fitur seperti galeri seni, detail galeri seni, review seni, news & event serta kalendar budaya.
    - **Prototype:** Menghasilkan flowchart dan desain user interface yang akan digunakan sebagai acuan bagian front-end web.
 
 3. **Teknologi dan Alat yang Digunakan:**
